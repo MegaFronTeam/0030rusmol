@@ -1,0 +1,142 @@
+// start .sOpportunities
+.sOpportunities {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		--bs-gutter-y: var(--bs-gutter-x);
+		margin-bottom: rem(32);
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+		&:nth-child(2),
+		&:nth-child(3){
+			@include media-breakpoint-up(xl) {
+			}
+			.sOpportunities__item{
+				display: flex;
+				flex-direction: column;
+				p{
+					flex-grow: 1;
+				}
+			}
+		}
+	}
+	&__col:nth-child(1) {
+
+		@include media-breakpoint-down(lg) {
+			width: 100%;
+		}
+	}
+	&__col:nth-child(1) &__item{
+		@include media-breakpoint-up(lg) {
+
+			margin-bottom: -232px;
+		}
+	}
+	&__item{
+		background: #FFFFFF;
+		@include mt;
+		&:hover{
+
+			box-shadow:  0px 4px 10px  rgba(0, 0, 0, 0.08);
+		}
+		box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+		border-radius: 32px;
+		min-height: 100%;
+		@include media-breakpoint-up(xxl) {
+			padding: rem(43) rem(41);
+		}
+		
+		@include media-breakpoint-up(xl) {
+			padding: rem(43) rem(31);
+		}
+
+		padding: rem(43) rem(15);
+		
+		a{
+			@extend .btn, .btn-primary;
+		}
+		p{
+			font-size: rem(18);
+			color: #727272;
+
+		}
+		&-footer{
+			padding-top: rem(24);
+		}
+	}
+	&__labels{
+		@include roww(8px, m);
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 25px;
+	}
+	&__label{
+		color: $primary;
+		font-weight: 500;
+		font-size: 14px;
+		padding: rem(9) rem(17);
+		background-color: $warning;
+		margin-bottom: 8px;
+		border-radius: var(--rad);
+		&:nth-child(4n + 2) { --rad: 33.0401px;}
+		&:nth-child(4n + 3) { --rad: 0px 0px 33.0401px 33.0401px;}
+		&:nth-child(4n + 4) { --rad: 33.0401px 0px 33.0401px 33.0401px;}
+	}
+
+	&__video-wrap{ 
+		@include block(864, 520);
+		position: relative;
+		margin-bottom: rem(46);
+		iframe{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 40px;
+			// pointer-events: none;
+		}
+	}
+	&__col-text{
+
+		align-self: flex-end;
+	}
+	&__title{
+		@include media-breakpoint-up(xl) {
+			font-size: rem(106);
+		}
+		color: transparent;
+		-webkit-text-stroke: 1px $primary;
+		text-stroke: 1px $primary;
+		line-height: calc(88 / 106); 
+
+		position: relative;
+		z-index: 4;
+		font-weight: 500;
+		pointer-events: none;
+		max-width: rem(400);
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 1rem;
+		}
+		@include media-breakpoint-up(lg){
+			max-width: rem(600);
+			margin-left: .75em;
+			font-size: rem(86);
+		}
+		font-size: rem(56);
+
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sOpportunities

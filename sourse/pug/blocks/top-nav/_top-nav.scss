@@ -1,19 +1,56 @@
+.fixed .top-nav {
+	// z-index: initial;
+}
 .top-nav {
-	// background: svg-load('../svg/check.svg',  stroke=$primary); 
-	// 
-	@include media-breakpoint-up(xl) {
-		background-color: #000;
-		border: 1px solid #000;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	z-index: 900;
+	@include media-breakpoint-up(lg){
+		top: calc(var(--main-top-y) + 58px);
+	}
+	top: calc(var(--main-top-y) + 18px);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	// @include mt;
+	// &.fixed{
+	// 	top: 0;
+	// 	background-color: rgba($primary, .5);
+	// }
+	.row{
+		align-items: center;
+	}
+	&__inner{
+		@include center((1312px - 160px + 32px));
+		padding-left: rem(16);
+		padding-right: rem(16);
+	}
+	.row{
+		align-items: center;
+	}
+	
+	.logo-link{
+			@include media-breakpoint-up(xl) {
+			margin-right: rem(100);
+		}
+		img{
+			@extend .res-i;
+		}
 	}
 
-	@include media-breakpoint-up(lg) {
-		background-color: red;
-
+	&__btn--cabinet{
+		@extend .btn, .btn-primary;
+		padding: 0;
+		width: rem(48);
+		height: rem(48);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		.icon{
+			font-size: rem(16);
+		}
 	}
-	p{
-		@include ell();
-	}
-
 	@include media-breakpoint-up(md) {}
 
 	@include media-breakpoint-up(sm) {}

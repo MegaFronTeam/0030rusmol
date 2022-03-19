@@ -2,8 +2,13 @@ mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContact
-				
-			.row
+			+b.section-title
+				h2 Контакты
+			
+			+e.panel.panel
+				.row
+					.col-xl-3.col-lg-4.col-md-6
+						+e.title Росмолодежь
+						p Ольга Богданова
+						a(href="mailto:obogdanova@fadm.gov.ru") obogdanova@fadm.gov.ru
 	// end sContact

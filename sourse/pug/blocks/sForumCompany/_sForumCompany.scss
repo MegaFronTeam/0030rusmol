@@ -1,0 +1,117 @@
+// start .sForumCompany
+.sForumCompany {
+	position: relative;
+	// z-index: 2;
+	h2{
+		line-height: 1;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		@include media-breakpoint-up(xl){
+			--size: 1000px
+		}
+		--size: 500px;
+		width: var(--size);
+		height: var(--size); 
+		background: #8C64D8;
+		opacity: 0.2;
+		border-radius: 50%;
+		filter: blur(40px); 
+		z-index: -1;
+		right: calc(-1 * var(--size) / 2);
+		// top: 0;
+		bottom: 0;
+	}
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		@include media-breakpoint-up(xxl) {
+			--bs-gutter-x: #{rem(100)};
+		}
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+		margin-bottom: 26px;
+	}
+	&__item{
+
+	}
+	&__number{
+		text-align: right;
+		@include media-breakpoint-up(xl) {
+			font-size: rem(203);
+		}
+		@include media-breakpoint-up(lg) {
+		font-size: rem(163);
+	}
+	@include media-breakpoint-up(sm) {
+
+		font-size: rem(103);
+	}
+	font-size: 40vw;
+		font-weight: 300;
+		color: #8C64D8;
+		line-height: .9;
+		display: inline-block;
+		
+	}
+	&__title{
+		line-height: 1;
+		text-align: right;
+		color: #727272;
+		font-size: rem(18);
+	}
+	small{
+		color: #8C64D8;
+		font-weight: 300;
+		font-size: rem(58);
+		// @include media-breakpoint-up(sm) {
+
+		// }
+		// font-size: rem(30);
+	}
+	p{
+		@include media-breakpoint-up(lg) {
+
+			margin-top: rem(50);
+		}
+		@include rfs(32px);
+		color: $secondary;
+		max-width: rem(440);
+		line-height: calc(37 / 32);
+	}
+	.container{
+		position: relative;
+		z-index: 2;
+		picture{
+			z-index: -1;
+			position: relative;
+			@include media-breakpoint-up(xl) {
+				
+				position: absolute;
+				bottom: -10px;
+				left: rem(400);
+				margin-top: 0;
+				img{
+					max-width: none;
+				}
+			}
+			margin-top: -60px;
+			// left: 0;
+		
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sForumCompany

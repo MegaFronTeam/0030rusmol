@@ -1,0 +1,34 @@
+mixin sSchedule(data)
+	// start sSchedule
+	+b.sSchedule.section#sSchedule&attributes(attributes)
+		.container
+			.tabs
+				.tabs__caption
+					.tabs__btn.active Всеросийсские
+					.tabs__btn Окружные
+					.tabs__btn Профильные
+				.tabs__wrap
+					mixin tab()
+						.tabs__content&attributes(attributes)
+							+e.row.row
+								mixin item(t, p)
+									+e.col.col-xl-4.col-md-6
+										+e.item
+											+e.video-wrap
+												//- <iframe class="hover-video" width="560" height="315" src="https://www.youtube.com/embed/6xiQWNchoeo?enablejsapi=1" title="YouTube video player" loading='lazy' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											+e.date 2016 — 2022
+											+e.title= t
+											+e.place= p
+											+e.btn-wrap
+												+e.btn(href="#")  Подробнее
+								+item(`Таврида`,`Республика Крым`)
+								+item(`Евразия Global`,`Оренбургская область`)
+								+item(`ШУМ`,`Калининградская область`)
+								+item(`Территория смыслов`,`Московская область`)
+								+item(`Бирюса`,`Красноярский край`)
+								+item(`ОстроVa`,`Сахалинская область`)
+								+item(`Машук-2022`,`Ставропольский край`)
+					+tab().active
+					+tab()
+					+tab()
+	// end sSchedule

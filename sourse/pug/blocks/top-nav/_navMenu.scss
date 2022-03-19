@@ -19,7 +19,12 @@
 	}
 	a{
 		display: block;
-		padding: rem(20) calc(var(--bs-gutter-x) / 2);
+		padding: rem(10) calc(var(--bs-gutter-x) / 2);
+		color: $body-color;
+		.icon{
+				font-size: rem(16);
+				margin-right: rem(12);
+		}
 	}
 }
 
@@ -27,7 +32,7 @@
 
 .toggle-menu-mobile {
 	--h: #{em(2)};
-	--color: #{$primary};
+	--color: #fff;
 	--position: calc(var(--h) * 2);
 	&.on span {
 		--color: transparent;
@@ -86,6 +91,9 @@
 		height: calc(var(--vh, 1vh) * 100);
 		width: 280px;
 		top: 0;
+		&.active{
+		box-shadow: 0  0 0 2000px rgba(0, 0, 0, .5);
+		}
 		// left: 0;
 		right: 0;
 		background-color: $body-bg;

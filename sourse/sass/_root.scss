@@ -2,17 +2,17 @@
 :root {
 	--animate-delay: 1.2s;
 	--bs-body-font-size: #{$em-base};
-
-	@include media-breakpoint-up(md) {
-
-		--sPT: #{rem(80)};
-		--sPB: #{rem(90)};
-		--sTPB: #{rem(40)};
-	}
-
-	--sPT: #{rem(80 * .5)};
-	--sPB: #{rem(90 * .5)};
+ 
+	
+	--sPT: #{rem(59)};
+	--sPB: #{rem(59)};
 	--sTPB: #{rem(40 * .5)};
+	
+	
+	@include media-breakpoint-up(lg) {
+		--main-top-y: 58px;
+	}
+	--main-top-y: 30px;
 
 
 		--swiperArrowSize: #{rem(68)};

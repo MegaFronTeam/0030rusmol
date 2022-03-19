@@ -60,7 +60,7 @@ body {
 		height: 100%;
 		@include mt;
 		// background-color: $body-color;
-		background-color: rgba($body-color, 0.8); 
+		// background-color: rgba($body-color, 0.8); 
     backdrop-filter: blur(5px);
 		opacity: 0;
 		z-index: -1;
@@ -82,10 +82,10 @@ body {
 		width: 100%;
 		left: 0;
 		top: 0;
-		z-index: 999;
+		z-index: 700;
 
 		&::before {
-			z-index: 999;
+			z-index: 700;
 			opacity: 0.76;
 		}
 	}
@@ -120,12 +120,16 @@ body {
 
 .section {
 	@include bgs;
-	padding-top: var(--sPT);
-	padding-bottom: var(--sPB);
+	margin-top: var(--sPT);
+	margin-bottom: var(--sPB);
 }
 
 .section-title {
 	margin-bottom: var(--sTPB);
+	h2{
+		color: $primary;
+		line-height: calc(139 / 120);
+	}
 }
 
 
@@ -257,21 +261,45 @@ ul {
 	width: 100%;
 }
 .tabs {
+	&__caption{
+		display: inline-flex;
+		background: rgba(#727272, .1);
+		// box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.9);
+		border-radius: 40px;
+		@include media-breakpoint-up(sm){
+		padding: rem(8);
+	}
+	padding: rem(4);
+		margin-bottom: 29px;
+	}
 	&__btn {
-		&:hover {
-			cursor: pointer;
+		text-align: center;
+		@include mt;
+		@include media-breakpoint-up(sm){
+			padding: rem(6) rem(24);
+			font-size: 1rem;
 		}
-
-		&.active {}
+		font-size: 14px;
+		padding: rem(6) rem(10);
+		border-radius: rem(40px);
+		cursor: pointer;
+		@include media-breakpoint-up(xl){
+			font-size: rem(20);
+		}
+		&:hover,
+		&.active {
+			background-color: $primary;
+			color: #fff;
+		}
 
 	}
 
 	&__content {
-		opacity: 0;
-		@include mt;
+		// opacity: 0;
+		// @include mt;
 		&.active {
 			display: block;
-			opacity: 1;
+			// opacity: 1;
 		}
 
 		display: none;
@@ -486,4 +514,35 @@ iframe {
 .swiper-wrapper{
 	
 	// @include row-sw(10px, sm, 100px);
+}
+
+h2{
+	@include media-breakpoint-up(xxl) {
+		font-size: rem(120);
+	}
+	
+	@include media-breakpoint-up(xl) {
+		font-size: rem(100);
+	}
+
+}
+.btn{
+	@include media-breakpoint-up(xxl) {
+		font-size: rem(20);
+		padding-left: rem(32);
+		padding-right: rem(32);
+	}
+}
+.btn-primary{
+	color: $warning !important;
+}
+
+.panel{
+	@include media-breakpoint-up(xl) {
+
+		border-radius: 32px;
+		padding: rem(60) rem(38) rem(48);
+	}
+	border-radius: 20px;
+	padding: rem(30) rem(18);
 }

@@ -1,0 +1,37 @@
+mixin sOpportunities(data)
+	// start sOpportunities
+	+b.SECTION.sOpportunities.section#sOpportunities&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Возможности
+			+e.row.row
+				mixin item(t,p,b)
+					+e.col.col-lg-4.col-md-6 
+						+e.item
+							h5= t
+							p!= p
+							div
+								a(href="#")= b
+							block
+				+item(`Участникам форума`,`Сможешь лучше понять себя, научишься развивать сильные стороны и&nbsp;достигать целей`,`Пройти квест`)
+					+e.item-footer 
+						h5 О форумах
+						p Наши принципы: 
+						+e.labels
+							+e.label полезность
+							+e.label открытость
+							+e.label партнерство
+							+e.label наставничество
+						a(href="#") Все форумы
+				+item(`Представителям форумной дирекции`,`Cистематизация и&nbsp;визуализация знаний, необходимых для подготовки и&nbsp;проведения молодежных образовательных форумов`,`Приступить к обучению`)
+				+item(`Партнерам`,`Cистематизация и&nbsp;визуализация знаний, необходимых для подготовки и&nbsp;проведения молодежных образовательных форумов`,`Узнать больше`)
+			+e.footer
+				.row 
+					+e.col-text.col-sm-4
+						+e.title Развивайся Созидай Знакомся 
+					.col
+						+e.video-wrap
+							//- <iframe width="560" height="315" src="https://www.youtube.com/embed/6xiQWNchoeo?autoplay=1&mute=1&controls=0&loop=1&modestbranding=1&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+							<iframe id='lg-player' width="1224" height="410" src="//rutube.ru/play/embed/6909a783a709b487d2e4e6aeb3adc7db?quality=-2" frameborder="0" allow="clipboard-write" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
+	// end sOpportunities

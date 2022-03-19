@@ -1,7 +1,26 @@
 .footer {
-		
-	margin-top: auto;
+		margin-bottom: 65px;
+	
+	&__panel{
+		background: #8C64D8;
+		box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
 
+	}
+	.soc{
+		a{
+			color: #fff !important;
+		}
+	}
+	
+	&__head{
+		margin-bottom: 40px;
+	}
+	&__footer{
+		a{
+			@extend .text-body;
+		}
+	}
+	font-size: 14px;
 // 
 @include media-breakpoint-up(xl) {}
 

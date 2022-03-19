@@ -1,9 +1,13 @@
 mixin footer()
 	+b.FOOTER.footer
 		.container
-			.row
-				.col
-					
-				.col Footer
-				.col
-				.col-auto
+			+e.panel.panel
+				+e.head.row.gy-3
+					.col-sm
+						+logo
+					.col-auto
+						+soc
+				+e.footer.row.gy-3
+					.col-auto: a(href="#")  Политика конфиденциальности
+					.col-auto: a(href="#")  Пользовательское соглашение
+					.col-xl-3.col-lg-auto.order-lg-first © 2020. Все права защищены

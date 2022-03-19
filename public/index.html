@@ -13,113 +13,650 @@
 	</head>
 	<body class="main-page">
 		<div class="main-wrapper">
-			<!-- start header-->
-			<header class="header" id="header">
-			</header>
-			<!-- end header-->
 			<!-- start top-nav-->
-			<div class="top-nav block-with-lazy">
+			<div class="top-nav">
 				<div class="container">
-					<div class="row">
-						<div class="col order-lg-0 order-last">
-							<div class="menu-mobile menu-mobile--js">
-								<div class="menu-mobile__inner">
-									<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
-									</div>
-									<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наши работы</a></li>
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Калькулятор</a></li>
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заказать</a></li>
-									</ul>
+					<div class="top-nav__inner">
+						<div class="row">
+							<div class="col-lg-auto col">
+								<div class="logo-link"><a href="/"><img src="img/svg/logo.svg" alt=""/></a>
 								</div>
 							</div>
-						</div>
-						<div class="col-auto d-lg-none">
-							<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+							<div class="col-lg order-lg-0 order-last">
+								<div class="menu-mobile menu-mobile--js">
+									<div class="menu-mobile__inner">
+										<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+										</div>
+										<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Главная</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О форумах</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">
+													<svg class="icon icon-game ">
+														<use xlink:href="img/svg/sprite.svg#game"></use>
+													</svg>Пройти квест</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-auto">
+								<a class="top-nav__btn top-nav__btn--cabinet" href="#">
+									<svg class="icon icon-user ">
+										<use xlink:href="img/svg/sprite.svg#user"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="col-auto d-lg-none">
+								<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- end top-nav-->
-			<!-- start topLine-->
-			<div class="topLine section" id="topLine">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>topLine</h2>
-					</div>
-					<div class="row"></div>
-				</div>
-			</div>
-			<!-- end topLine-->
 			<!-- start headerBlock-->
-			<div class="headerBlock section" id="headerBlock">
+			<div class="headerBlock" id="headerBlock">
 				<div class="container">
-					<div class="section-title text-center">
-						<h2>headerBlock ds dfsdfdsfsd</h2>
+					<div class="headerBlock__inner">
+						<div class="headerBlock__video-wrap bg-wrap">
+							<!-- picture-->
+							<picture class="picture-bg"> 
+								<source type="image/avif" srcset="img/@2x/avif/head-bg.avif" media="(min-width:576px)"/>
+								<source type="image/avif" srcset="img/@1x/avif/head-bg.avif"/>
+								<source type="image/webp" srcset="img/@2x/webp/head-bg.webp" media="(min-width:576px)"/>
+								<source type="image/webp" srcset="img/@1x/webp/head-bg.webp"/>
+								<source type="image/jpg" srcset="img/@2x/avif/head-bg.jpg" media="(min-width:576px)"/>
+								<source type="image/jpg" srcset="img/@1x/avif/head-bg.jpg"/>
+								<source type="image/avif" srcset="img/@2x/avif/head-bg.avif"/>
+								<source type="image/webp" srcset="img/@2x/webp/head-bg.webp"/><img class="object-fit-js" src="img/@2x/head-bg.jpg" alt="" loading="lazy"/>
+							</picture>
+							<!-- /picture-->
+							<video loading="lazy" preload="auto" no-controls="no-controls" autoplay="autoplay" loop="loop" playsinline="playsinline" muted="muted">
+								<source src="video/video.webp" type="video/webp"/>
+								<source src="video/video.mp4" type="video/mp4"/>
+							</video>
+						</div>
+						<h1>События</h1>
+						<div class="headerBlock__slider headerBlock__slider--js swiper"> 
+							<div class="swiper-wrapper">
+								<div class="headerBlock__slide swiper-slide" data-swiper-parallax="10%"> 
+									<div class="headerBlock__item">Безопасная среда
+									</div>
+								</div>
+								<div class="headerBlock__slide swiper-slide" data-swiper-parallax="10%"> 
+									<div class="headerBlock__item">Поддержка
+									</div>
+								</div>
+								<div class="headerBlock__slide swiper-slide" data-swiper-parallax="10%"> 
+									<div class="headerBlock__item">Кроссфункциональность
+									</div>
+								</div>
+								<div class="headerBlock__slide swiper-slide" data-swiper-parallax="10%"> 
+									<div class="headerBlock__item">Счастье
+									</div>
+								</div>
+								<div class="headerBlock__slide swiper-slide" data-swiper-parallax="10%"> 
+									<div class="headerBlock__item">Нетворкинг
+									</div>
+								</div>
+								<div class="headerBlock__slide swiper-slide" data-swiper-parallax="10%"> 
+									<div class="headerBlock__item">Команда
+									</div>
+								</div>
+								<div class="headerBlock__slide swiper-slide" data-swiper-parallax="10%"> 
+									<div class="headerBlock__item">Трансформация
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="row"></div>
 				</div>
 			</div>
 			<!-- end headerBlock-->
-			<div class="soc">
-				<a class="soc__item" href="#" target="_blank">
-					<svg class="icon icon-fb ">
-						<use xlink:href="img/svg/sprite.svg#fb"></use>
-					</svg>
-				</a>
-				<a class="soc__item" href="#" target="_blank">
-					<svg class="icon icon-instagram ">
-						<use xlink:href="img/svg/sprite.svg#instagram"></use>
-					</svg>
-				</a>
-				<a class="soc__item" href="#" target="_blank">
-					<svg class="icon icon-telegram ">
-						<use xlink:href="img/svg/sprite.svg#telegram"></use>
-					</svg>
-				</a>
-			</div>
-			<!-- start sForm-->
-			<section class="sForm section" id="sForm">
+			<!-- start sOpportunities-->
+			<section class="sOpportunities section" id="sOpportunities">
 				<div class="container">
-					<div class="section-title text-center">
-						<h2>sForm</h2>
-						<h2>sForm</h2>
-						<h2>sForm</h2>
-						<h2>sForm</h2>
+					<div class="section-title">
+						<h2>Возможности</h2>
 					</div>
-					<div class="row"></div>
+					<div class="sOpportunities__row row">
+						<div class="sOpportunities__col col-lg-4 col-md-6"> 
+							<div class="sOpportunities__item">
+								<h5>Участникам форума</h5>
+								<p>Сможешь лучше понять себя, научишься развивать сильные стороны и&nbsp;достигать целей</p>
+								<div><a href="#">Пройти квест</a></div>
+								<div class="sOpportunities__item-footer"> 
+									<h5>О форумах</h5>
+									<p>Наши принципы: </p>
+									<div class="sOpportunities__labels">
+										<div class="sOpportunities__label">полезность
+										</div>
+										<div class="sOpportunities__label">открытость
+										</div>
+										<div class="sOpportunities__label">партнерство
+										</div>
+										<div class="sOpportunities__label">наставничество
+										</div>
+									</div><a href="#">Все форумы</a>
+								</div>
+							</div>
+						</div>
+						<div class="sOpportunities__col col-lg-4 col-md-6"> 
+							<div class="sOpportunities__item">
+								<h5>Представителям форумной дирекции</h5>
+								<p>Cистематизация и&nbsp;визуализация знаний, необходимых для подготовки и&nbsp;проведения молодежных образовательных форумов</p>
+								<div><a href="#">Приступить к обучению</a></div>
+							</div>
+						</div>
+						<div class="sOpportunities__col col-lg-4 col-md-6"> 
+							<div class="sOpportunities__item">
+								<h5>Партнерам</h5>
+								<p>Cистематизация и&nbsp;визуализация знаний, необходимых для подготовки и&nbsp;проведения молодежных образовательных форумов</p>
+								<div><a href="#">Узнать больше</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="sOpportunities__footer">
+						<div class="row"> 
+							<div class="sOpportunities__col-text col-sm-4">
+								<div class="sOpportunities__title">Развивайся Созидай Знакомся 
+								</div>
+							</div>
+							<div class="col">
+								<div class="sOpportunities__video-wrap"><iframe id='lg-player' width="1224" height="410" src="//rutube.ru/play/embed/6909a783a709b487d2e4e6aeb3adc7db?quality=-2" frameborder="0" allow="clipboard-write" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
-			<!-- end sForm-->
-			<div class="container">
-				<li> 
-					<h2>заловок</h2>
-					<p>текст</p>
-				</li>
-				<li> 
-					<h2>заловок 22</h2>
-					<p>текст</p>
-				</li>
-				<li> 
-					<h2>заловок 33</h2>
-					<p>текст</p>
-				</li>
+			<!-- end sOpportunities-->
+			<!-- start sForumCompany-->
+			<section class="sForumCompany section" id="sForumCompany">
+				<div class="container">
+					<div class="section-title">
+						<h2>Форумная компания</h2>
+					</div>
+					<div class="sForumCompany__row row">
+						<div class="sForumCompany__col col-sm-auto">
+							<div class="sForumCompany__number"> 
+								<div class="sForumCompany__title">очных участников
+								</div>20
+							</div><small>k</small>
+						</div>
+						<div class="sForumCompany__col col-sm-auto">
+							<div class="sForumCompany__number"> 
+								<div class="sForumCompany__title">онлайн участников
+								</div>250
+							</div><small>k</small>
+						</div>
+						<div class="sForumCompany__col col-sm-auto">
+							<div class="sForumCompany__number"> 
+								<div class="sForumCompany__title">регионов
+								</div>16
+							</div>
+						</div>
+					</div>
+					<p>Форумы платформы <br> Росмолодежь.События охватывают всю территорию Российской Федерации</p>
+					<!-- picture-->
+					<picture> 
+						<source type="image/avif" srcset="img/@2x/avif/map.avif" media="(min-width:576px)"/>
+						<source type="image/avif" srcset="img/@1x/avif/map.avif"/>
+						<source type="image/webp" srcset="img/@2x/webp/map.webp" media="(min-width:576px)"/>
+						<source type="image/webp" srcset="img/@1x/webp/map.webp"/>
+						<source type="image/png" srcset="img/@2x/avif/map.png" media="(min-width:576px)"/>
+						<source type="image/png" srcset="img/@1x/avif/map.png"/>
+						<source type="image/avif" srcset="img/@2x/avif/map.avif"/>
+						<source type="image/webp" srcset="img/@2x/webp/map.webp"/><img src="img/@2x/map.png" alt="" loading="lazy"/>
+					</picture>
+					<!-- /picture-->
+				</div>
+			</section>
+			<!-- end sForumCompany-->
+			<!-- start sSchedule-->
+			<div class="sSchedule section" id="sSchedule">
+				<div class="container">
+					<div class="tabs">
+						<div class="tabs__caption">
+							<div class="tabs__btn active">Всеросийсские</div>
+							<div class="tabs__btn">Окружные</div>
+							<div class="tabs__btn">Профильные</div>
+						</div>
+						<div class="tabs__wrap">
+										<div class="tabs__content active">
+											<div class="sSchedule__row row">
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Таврида
+														</div>
+														<div class="sSchedule__place">Республика Крым
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Евразия Global
+														</div>
+														<div class="sSchedule__place">Оренбургская область
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">ШУМ
+														</div>
+														<div class="sSchedule__place">Калининградская область
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Территория смыслов
+														</div>
+														<div class="sSchedule__place">Московская область
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Бирюса
+														</div>
+														<div class="sSchedule__place">Красноярский край
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">ОстроVa
+														</div>
+														<div class="sSchedule__place">Сахалинская область
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Машук-2022
+														</div>
+														<div class="sSchedule__place">Ставропольский край
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__content">
+											<div class="sSchedule__row row">
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Таврида
+														</div>
+														<div class="sSchedule__place">Республика Крым
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Евразия Global
+														</div>
+														<div class="sSchedule__place">Оренбургская область
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">ШУМ
+														</div>
+														<div class="sSchedule__place">Калининградская область
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Территория смыслов
+														</div>
+														<div class="sSchedule__place">Московская область
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Бирюса
+														</div>
+														<div class="sSchedule__place">Красноярский край
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">ОстроVa
+														</div>
+														<div class="sSchedule__place">Сахалинская область
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Машук-2022
+														</div>
+														<div class="sSchedule__place">Ставропольский край
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs__content">
+											<div class="sSchedule__row row">
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Таврида
+														</div>
+														<div class="sSchedule__place">Республика Крым
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Евразия Global
+														</div>
+														<div class="sSchedule__place">Оренбургская область
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">ШУМ
+														</div>
+														<div class="sSchedule__place">Калининградская область
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Территория смыслов
+														</div>
+														<div class="sSchedule__place">Московская область
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Бирюса
+														</div>
+														<div class="sSchedule__place">Красноярский край
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">ОстроVa
+														</div>
+														<div class="sSchedule__place">Сахалинская область
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="sSchedule__col col-xl-4 col-md-6">
+													<div class="sSchedule__item">
+														<div class="sSchedule__video-wrap">
+														</div>
+														<div class="sSchedule__date">2016 — 2022
+														</div>
+														<div class="sSchedule__title">Машук-2022
+														</div>
+														<div class="sSchedule__place">Ставропольский край
+														</div>
+														<div class="sSchedule__btn-wrap">
+															<a class="sSchedule__btn" href="#"> Подробнее
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!-- end sSchedule-->
+			<!-- start sBanner-->
+			<section class="sBanner section" id="sBanner">
+				<div class="container">
+					<div class="sBanner__inner">
+						<h2>Совершенствуйся  вместе с&nbsp;нами</h2>
+						<p>Хочешь узнать что-то новое о&nbsp;себе и&nbsp;поставить цели на&nbsp;ближайшее время?</p>
+						<a class="sBanner__btn" href="#">Пройти квест
+						</a>
+						<!-- picture-->
+						<picture> 
+							<source type="image/avif" srcset="img/@2x/avif/banner-img.avif" media="(min-width:576px)"/>
+							<source type="image/avif" srcset="img/@1x/avif/banner-img.avif"/>
+							<source type="image/webp" srcset="img/@2x/webp/banner-img.webp" media="(min-width:576px)"/>
+							<source type="image/webp" srcset="img/@1x/webp/banner-img.webp"/>
+							<source type="image/png" srcset="img/@2x/avif/banner-img.png" media="(min-width:576px)"/>
+							<source type="image/png" srcset="img/@1x/avif/banner-img.png"/>
+							<source type="image/avif" srcset="img/@2x/avif/banner-img.avif"/>
+							<source type="image/webp" srcset="img/@2x/webp/banner-img.webp"/><img src="img/@2x/banner-img.png" alt="" loading="lazy"/>
+						</picture>
+						<!-- /picture-->
+					</div>
+				</div>
+			</section>
+			<!-- end sBanner-->
+			<!-- start sContact-->
+			<section class="sContact section" id="sContact">
+				<div class="container">
+					<div class="section-title">
+						<h2>Контакты</h2>
+					</div>
+					<div class="sContact__panel panel">
+						<div class="row">
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<div class="sContact__title">Росмолодежь
+								</div>
+								<p>Ольга Богданова</p><a href="mailto:obogdanova@fadm.gov.ru">obogdanova@fadm.gov.ru</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sContact-->
 			<footer class="footer">
 				<div class="container">
-					<div class="row">
-						<div class="col"></div>
-						<div class="col">Footer</div>
-						<div class="col"></div>
-						<div class="col-auto"></div>
+					<div class="footer__panel panel">
+						<div class="footer__head row gy-3">
+							<div class="col-sm">
+								<div class="logo-link"><a href="/"><img src="img/svg/logo.svg" alt=""/></a>
+								</div>
+							</div>
+							<div class="col-auto">
+								<div class="soc">
+									<a class="soc__item" href="#" target="_blank">
+										<svg class="icon icon-fb ">
+											<use xlink:href="img/svg/sprite.svg#fb"></use>
+										</svg>
+									</a>
+									<a class="soc__item" href="#" target="_blank">
+										<svg class="icon icon-instagram ">
+											<use xlink:href="img/svg/sprite.svg#instagram"></use>
+										</svg>
+									</a>
+									<a class="soc__item" href="#" target="_blank">
+										<svg class="icon icon-telegram ">
+											<use xlink:href="img/svg/sprite.svg#telegram"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer__footer row gy-3">
+							<div class="col-auto"><a href="#"> Политика конфиденциальности</a></div>
+							<div class="col-auto"><a href="#"> Пользовательское соглашение</a></div>
+							<div class="col-xl-3 col-lg-auto order-lg-first">© 2020. Все права защищены</div>
+						</div>
 					</div>
 				</div>
 			</footer>
 		</div>
-		<!--  start modals--><a class="link-modal-js" href="modal-call">modal-call </a>
+		<!--  start modals-->
 		<div id="modal-call" style="display: none">
 			<div class="modal-win">
 				<div class="form-wrap">

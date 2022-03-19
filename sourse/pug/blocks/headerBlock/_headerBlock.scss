@@ -1,19 +1,98 @@
 // start .headerBlock
 .headerBlock {
-	margin-bottom: 1px;
-	min-height: 100vh;
-	min-height: calc(var(--vh, 1vh) * 100);
-	// background-image: url(../img);
-	// background-color: #000000;
-
-	h1 {
-		margin-bottom: 1px;
+	margin-top: var(--main-top-y);
+	&__inner{
+		position: relative;
 	}
-
-	h2 {
-		margin-bottom: 1px;
+	video{
+		// @include a-cent;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		object-fit: cover;
 	}
+	&__video-wrap{
+		position: relative;
+		overflow: hidden;
+		// height: 720px;
+		border-radius: 32px;
+		background: #C4A3FA;
+		z-index: -1;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		&::before{
+			content: '';
+			@include a-cent;
+			background: #C4A3FA;
+			mix-blend-mode: hard-light; 
+		}
+	}
+	&__inner{
+		padding-top: rem(132);
+		padding-bottom: rem(96);
+		// min-height: calc(100vh - var(--main-top-y));
+		z-index: 2;
+		position: relative;
+	}
+	h1{
+		margin-bottom: 37px;
+		@include media-breakpoint-up(xxl) {
+			font-size: 336.264px;
+		}
+		@include media-breakpoint-up(xl) {
+			font-size: 285.264px;
+		}
+		
+		@include media-breakpoint-up(lg) {
+			font-size: 240px;
+		}
+		
+		@include media-breakpoint-up(md) {
+			font-size: 177px;
+		}
+		@include media-breakpoint-up(sm) {
+			font-size: 130px;
+		}
+		font-size: calc(28px + 15vw);
 
+
+
+		// font-size: 18vw;
+		line-height: calc(390 / 336);
+		color: $warning;
+		// text-align: right;
+		margin-left: -1%;
+	}
+	&__slider{
+		overflow: visible;
+		margin-left: 5%;
+	}
+	&__item{
+		will-change: transform;
+		font-weight: 500;
+		box-shadow: 0 0 0 2px #000;
+		// border: 2px solid #000;
+		@include media-breakpoint-up(xl) {
+			// border: 2px solid #000;
+			font-size: 22px;
+			padding: rem(19) rem(33);
+		}
+		padding: rem(10) rem(23);
+		// @include rfs(22px);
+		border-radius: var(--rad);
+	}
+	&__slide{
+		width: auto;
+		&:nth-child(3n + 1) { --rad: 0}
+		&:nth-child(3n + 2) { --rad: 63.7324px;}
+		&:nth-child(3n + 3) { --rad: 0px 0px 63.7324px 63.7324px;		}
+	}
 	@include media-breakpoint-up(xl) {}
 
 	@include media-breakpoint-up(lg) {}

@@ -19,15 +19,20 @@ mixin mob-mnu()
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
-	+b.top-nav.block-with-lazy
+	+b.top-nav
 		.container
-			.row
-				.col.order-lg-0.order-last
-					.menu-mobile.menu-mobile--js
-						.menu-mobile__inner
-							+menu-toggle()
-							+mnu()
-					
-				.col-auto.d-lg-none
-					+menu-toggle()
+			+e.inner
+				.row
+					.col-lg-auto.col
+						+logo()
+					.col-lg.order-lg-0.order-last
+						.menu-mobile.menu-mobile--js
+							.menu-mobile__inner
+								+menu-toggle()
+								+mnu()
+					.col-auto
+						+e.btn--cabinet(href="#")
+							+icon("user")
+					.col-auto.d-lg-none
+						+menu-toggle()
 	// end top-nav

@@ -1,0 +1,22 @@
+mixin sForumCompany(data)
+	// start sForumCompany
+	+b.SECTION.sForumCompany.section#sForumCompany&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Форумная компания
+				
+			+e.row.row
+				mixin item(t,n)
+					+e.col.col-sm-auto
+							+e.number 
+								+e.title= t
+								= n
+							block
+				+item(`очных участников`,`20`)
+					small k
+				+item(`онлайн участников`,`250`)
+					small k
+				+item(`регионов`,`16`)
+			p Форумы платформы <br> Росмолодежь.События охватывают всю территорию Российской Федерации
+			+pic('map.png')
+	// end sForumCompany

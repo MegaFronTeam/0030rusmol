@@ -1,7 +1,27 @@
 
 	// start .sContact
 	.sContact {
-		 
+		 --sPB:0;
+		&__panel{
+			background: #FFFFFF;
+			box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+		
+		}
+		&__title{
+			font-size: rem(24);
+			margin-bottom: 16px;
+		}
+		p{
+			font-size: 14px;
+			color: #727272;
+			margin-bottom: 8px;
+		}
+		a{
+			font-size: 14px;
+		}
+		.row{
+			--bs-gutter-y: var(--bs-gutter-x);
+		}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
