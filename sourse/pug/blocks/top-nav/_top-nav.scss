@@ -40,7 +40,7 @@
 
 	&__btn--cabinet{
 		@extend .btn, .btn-primary;
-		padding: 0;
+		padding: 0 !important;
 		width: rem(48);
 		height: rem(48);
 		display: flex;
