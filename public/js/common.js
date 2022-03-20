@@ -313,11 +313,11 @@ function eventHandler() {
     });
   }); 
 	setTimeout(() => {
-		document.querySelector("body.main-page").classList.add('start-progress')
+		document.querySelector("body.animate-page").classList.add('start-progress')
 	}, 100);
 	
 	setTimeout(() => {
-		document.querySelector("body.main-page").classList.add('start-page')
+		document.querySelector("body.animate-page").classList.add('start-page')
 	}, 3100);
 
 };
