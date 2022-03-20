@@ -571,7 +571,7 @@ h2{
 		
 	}
 	.headerBlock__video-wrap--top{
-		opacity:  var(--op,0);
+		opacity:  var(--op-block,0);
 		@include mt(1s);
 		transition-delay: var(--delay);
 	}
@@ -598,5 +598,5 @@ h2{
 }
 .start-page{
 	--start-anim: ' ';
-	--op: 1
+	--op-block: 1
 }
