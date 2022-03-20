@@ -303,6 +303,14 @@ function eventHandler() {
 	// 			volume: 0
 	// 		}
 	// 	})); 
+	setTimeout(() => {
+		document.querySelector("body.main-page").classList.add('start-progress')
+	}, 100);
+	
+	setTimeout(() => {
+		document.querySelector("body.main-page").classList.add('start-page')
+	}, 3100);
+
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

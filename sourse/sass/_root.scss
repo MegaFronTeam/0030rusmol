@@ -28,6 +28,9 @@
 
 	--fancybox-bg: rgba(24, 24, 27, .77);
 
+	--delay: 1s;
+	--st1: calc(var(--delay) + .5s);
+	--st2: calc(var(--delay) + var(--st1) + .5s);
 
 
 	  //  --carousel-button-width: 48px;

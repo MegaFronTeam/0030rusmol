@@ -59,7 +59,7 @@
 			<div class="headerBlock" id="headerBlock">
 				<div class="container">
 					<div class="headerBlock__inner">
-						<div class="headerBlock__video-wrap bg-wrap">
+						<div class="headerBlock__video-wrap headerBlock__video-wrap--back bg-wrap">
 							<!-- picture-->
 							<picture class="picture-bg"> 
 								<source type="image/avif" srcset="img/@2x/avif/head-bg.avif" media="(min-width:576px)"/>
@@ -72,6 +72,16 @@
 								<source type="image/webp" srcset="img/@2x/webp/head-bg.webp"/><img class="object-fit-js" src="img/@2x/head-bg.jpg" alt="" loading="lazy"/>
 							</picture>
 							<!-- /picture-->
+							<video loading="lazy" preload="auto" no-controls="no-controls" autoplay="autoplay" loop="loop" playsinline="playsinline" muted="muted">
+								<source src="video/video.webp" type="video/webp"/>
+								<source src="video/video.mp4" type="video/mp4"/>
+							</video>
+							<div class="progress-start">
+								<div class="progress-start__bar">
+								</div>
+							</div>
+						</div>
+						<div class="headerBlock__video-wrap headerBlock__video-wrap--top bg-wrap"> 
 							<video loading="lazy" preload="auto" no-controls="no-controls" autoplay="autoplay" loop="loop" playsinline="playsinline" muted="muted">
 								<source src="video/video.webp" type="video/webp"/>
 								<source src="video/video.mp4" type="video/mp4"/>
@@ -164,7 +174,7 @@
 								</div>
 							</div>
 							<div class="col">
-								<div class="sOpportunities__video-wrap"><iframe src="https://vk.com/video_ext.php?oid=-29370157&id=456239303&hash=ce3ad05120e59891&hd=2&autoplay=1&controls=0&disablekb=1&showinfo=0" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+								<div class="sOpportunities__video-wrap"><iframe src="https://vk.com/video_ext.php?oid=-29370157&id=456239303&hash=ce3ad05120e59891&hd=2&autoplay=1&controls=0&disablekb=1&showinfo=0?loop=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>

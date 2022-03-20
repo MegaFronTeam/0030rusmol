@@ -29,8 +29,14 @@
 		&::before{
 			content: '';
 			@include a-cent;
-			background: #C4A3FA;
-			mix-blend-mode: hard-light; 
+			// mix-blend-mode: color-burn; 
+		}
+		&--top{
+			&::before{
+				background: #C4A3FA;
+				mix-blend-mode: hard-light; 
+
+			}
 		}
 	}
 	&__inner{
@@ -132,3 +138,4 @@
 }
 
 // end.headerBlock
+

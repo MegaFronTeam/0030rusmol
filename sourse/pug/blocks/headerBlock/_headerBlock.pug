@@ -3,8 +3,14 @@ mixin headerBlock()
 	+b.headerBlock#headerBlock&attributes(attributes)
 		.container
 			+e.inner
-				+e.video-wrap.bg-wrap
+				+e.video-wrap--back.bg-wrap
 					+pic('head-bg.jpg','bg').picture-bg
+					video(loading='lazy' preload='auto' no-controls  autoplay  loop  playsinline  muted  )
+						source(src="video/video.webp" type='video/webp')
+						source(src="video/video.mp4" type='video/mp4')
+					+b.progress-start
+						+e.bar
+				+e.video-wrap--top.bg-wrap 
 					video(loading='lazy' preload='auto' no-controls  autoplay  loop  playsinline  muted  )
 						source(src="video/video.webp" type='video/webp')
 						source(src="video/video.mp4" type='video/mp4')
