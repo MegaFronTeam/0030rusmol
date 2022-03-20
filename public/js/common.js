@@ -303,6 +303,15 @@ function eventHandler() {
 	// 			volume: 0
 	// 		}
 	// 	})); 
+	$('.sSchedule__item').each(function(el){
+    var _this = $(this);
+    _this.on('mouseover', function(ev) {
+ 
+      _this[0].querySelector('iframe').src += "&autoplay=1";
+      ev.preventDefault();
+
+    });
+  }); 
 	setTimeout(() => {
 		document.querySelector("body.main-page").classList.add('start-progress')
 	}, 100);

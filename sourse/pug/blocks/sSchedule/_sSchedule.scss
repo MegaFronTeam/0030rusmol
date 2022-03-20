@@ -59,17 +59,22 @@
 		margin-bottom: calc(-1 * (var(--title-y,0) + var(--btn-h,0)));
 		will-change: contents;
 		iframe{
-			width: 100% !important;
-			height: 100% !important;
+			width: 200% !important;
+			height: 150% !important;
 			position: absolute;
-			left: 0;
-			top: 0;
+			object-fit: cover;
+			@include a-cent1;
+			*{
+				object-fit: cover;
+
+			} 
 			// z-index: -1;
 			pointer-events: none;
 		}
 		&:hover{
 			z-index: 4;
 			background-color: $primary;
+			border-color: transparent;
 			--color: #fff;
 			--title-y: 76px;
 			--btn-h: calc(var(--btn-sp) + #{rem(56px)});
