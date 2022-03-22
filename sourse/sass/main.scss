@@ -119,6 +119,9 @@ $output-bourbon-deprecation-warnings: false;
 @import '../pug/blocks/sSchedule/_sSchedule';
 @import '../pug/blocks/sBanner/_sBanner'; 
 @import '../pug/blocks/sContact/_sContact';
+@import '../pug/blocks/sHeaderPage/_sHeaderPage';
+@import '../pug/blocks/sInfoBlock/_sInfoBlock';
+@import '../pug/blocks/sGal/_sGal';
 
 @import "media"; // Всегда в конце
 

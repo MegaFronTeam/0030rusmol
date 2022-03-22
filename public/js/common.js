@@ -279,6 +279,16 @@ function eventHandler() {
 		},
 	});
 	// modal window
+	const galsl = new Swiper('.sGal__slider--js', { 
+		slidesPerView: 'auto',
+		spaceBetween: 32, 
+		loop: true,
+		speed: 1500,
+		autoplay: {
+			delay: 1000,
+		},
+	});
+	// modal window
 
 
 // 	var player;
@@ -311,14 +321,18 @@ function eventHandler() {
       ev.preventDefault();
 
     });
-  }); 
-	setTimeout(() => {
-		document.querySelector("body.animate-page").classList.add('start-progress')
-	}, 100);
-	
-	setTimeout(() => {
-		document.querySelector("body.animate-page").classList.add('start-page')
-	}, 3100);
+	}); 
+	let anim = document.querySelector("body.animate-page");
+	if (anim) {
+		
+		setTimeout(() => {
+			anim.classList.add('start-progress')
+		}, 100);
+		
+		setTimeout(() => {
+			anim.classList.add('start-page')
+		}, 3100);
+	}
 
 };
 if (document.readyState !== 'loading') {

@@ -1,0 +1,16 @@
+mixin sHeaderPage(data)
+	// start sHeaderPage
+	+b.sHeaderPage&attributes(attributes)
+		.container
+			+e.inner.bg-wrap
+				+img('head-page.png','bg').picture-bg
+				+e.head.row
+					.col-auto.h3 29 мая — 3 июня 2022 года
+					.col-auto.h3 Алтайский край
+				+e.title
+					h1 Алтай. Территория развития
+
+				+e.footer
+					a.btn.btn-primary(href="#") Пройти курс
+					a.btn.btn-primary(href="#" ).disabled Регистрация не доступна
+	// end sHeaderPage

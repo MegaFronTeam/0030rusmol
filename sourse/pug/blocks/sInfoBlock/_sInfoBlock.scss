@@ -1,0 +1,51 @@
+// start .sInfoBlock
+.sInfoBlock {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+		p{
+			color: #727272;
+			margin-bottom: 1em;
+			max-width: rem(750);
+			@include media-breakpoint-up(xxl) {
+				font-size: 32px;
+			}
+			@include rfs(26px);
+		}
+	}
+	&__item{
+
+	}
+	&__panel{
+		padding: rem(38);
+		background: #FFFFFF;
+		box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+		border-radius: 32px;
+		a{
+			@extend .text-body;
+		}
+	}
+	&__group{
+		margin-bottom: rem(24);
+		.small{
+			margin-bottom: rem(8);
+		}
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sInfoBlock

@@ -1,0 +1,27 @@
+mixin sInfoBlock(data)
+	// start sInfoBlock
+	+b.sInfoBlock.section#sInfoBlock&attributes(attributes)
+		.container
+			.row
+				+e.col.col
+					p Это акселерационная платформа для молодых управленцев и молодёжных команд по разработке и реализации туристского потенциала территорий Сибирского федерального округа.
+
+					p Участники займутся внедрением современных технологий и решением задач социально-экономического развития округа.
+				.col-lg-4
+					+e.panel
+						+e.group
+							.small.text-secondary Форум состоится:
+							.h6 29 мая – 3 июня 2022 года
+						+e.group
+							.small.text-secondary Сроки заявочной кампании:
+							.h6 22 марта – 29 апреля 2022 года
+						+e.group
+							.small.text-secondary Регион проведения:
+							.h6 Алтайский край
+						+e.group
+							.small.text-secondary Событие в соц.сетях
+							+soc()
+
+
+
+	// end sInfoBlock
