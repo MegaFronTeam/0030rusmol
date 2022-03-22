@@ -27,8 +27,11 @@
 			padding: 32px;
 			border-radius: 40px;
 		}
+		p{
+			font-size: rem(18);
+		}
 		padding: 32px rem(20);
-		border-radius: 30px;
+		border-radius: 20px;
 		border: 1px solid $primary;
 		max-width: 864px;
 		&.disabled{
@@ -52,11 +55,7 @@
 	&__btn{
 		@extend .btn;
 	}
-	&__title-link{
-		font-size: 24px;
-		line-height: calc(28 / 24);
-		margin-bottom: 28px;
-	}
+	
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
@@ -85,5 +84,14 @@
 	.smallest{
 		color: #727272;
 		font-size: 12px;
+	}
+}
+
+
+.aside-cabinet{
+	&__title-link{
+		font-size: 24px;
+		line-height: calc(28 / 24);
+		margin-bottom: 28px;
 	}
 }

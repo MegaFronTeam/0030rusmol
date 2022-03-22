@@ -1,0 +1,92 @@
+// start .sLessonBlock
+.sLessonBlock {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	max-width: 864px;
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sLessonBlock
+.sLessonBlock-head{
+	display: flex;
+	@include roww(16px, m);
+	flex-wrap: wrap;
+	font-weight: 400;
+	&__count{
+		font-size: 14px;
+	}
+	&__btn{
+		@extend .btn, .btn-light;text-align: left;
+		max-width: 192px;
+		display: inline-block;
+		color: #727272 !important;
+		padding: 10px 16px !important;
+		min-height: 100%;
+		margin-bottom: 16px;
+		font-size: 12px !important;
+		@include media-breakpoint-down(md) {
+			border-radius: 8px;
+		}
+		&.active{
+			box-shadow: 0 0 0 3px  $primary;
+		}
+	}
+}
+
+.sLessonBlock-body{
+	&__video-wrap{ 
+		@include block(864, 520);
+		position: relative;
+		margin-bottom: rem(46);
+		@include media-breakpoint-up(md) {
+			border-radius: 40px;
+		}
+		border-radius: 20px;
+		overflow: hidden;
+		iframe{
+			@include a-cent1;
+			width: calc(100% );
+			height: calc(100% );
+			// pointer-events: none;
+		}
+	}
+}
+
+.sLessonBlock-footer{
+	display: flex;
+	margin-bottom: 2rem;
+	justify-content: space-between;
+	&__btn{
+		@extend .btn, .btn-warning;
+		font-size: 24px !important;
+		padding: 10px 15px !important;
+		color: $primary ;
+		border-radius: 8px;
+		&:hover,
+		&.active{
+			background-color: $primary !important;
+			border-color: $primary !important;
+			color: $warning !important;
+		}
+	}
+}

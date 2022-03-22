@@ -8,14 +8,16 @@ mixin sCourceBlock4(data)
 						+e.item&attributes(attributes)
 							+e.sm-title Часть 1
 							+e.title!= t
+							block
 							+e.btn(href="#" class= cl)= b
 					+item(`Устойчивость к неопределённости и умение ориентироваться в непредсказуемой̆ реальности`,`Пройден`,`btn-light`)
+						p Это акселерационная платформа для молодых управленцев и молодёжных команд по разработке и реализации туристского потенциала территорий Сибирского федерального округа
 					+item(`Креативность и способность создавать новое`,`Пройден`,`btn-light`)
 					+item(`Ориентация на результат  `,`Пройти тест`,`btn-primary`)
 					+item(`Коммуникация`,`Пройти тест`,`btn-primary`).disabled
 					+item(`Эмпатия и сочувствие`,`Пройти тест`,`btn-primary`).disabled
 				.col-xl-3
-					+e.aside
+					+b.aside-cabinet
 						.mb-4
 							a.btn.btn-primary(href="#").mb-3.w-100  Пройти тест
 							.text-secondary.text-center.small Пройдите еще 3&nbsp;теста для того чтобы зарегистрироваться на&nbsp;мероприятие
@@ -31,6 +33,29 @@ mixin sCourceBlock4(data)
 									.col-auto
 										+icon("arrow-down")
 	// end sCourceBlock
+	
+mixin sCourceBlock4-1(data)
+	// start sCourceBlock
+	+b.sCourceBlock.section#sCourceBlock&attributes(attributes)
+		.container
+			.row
+				.col-xl-9
+					block
+				.col-xl-3
+					+b.aside-cabinet
+						+e.title-link Дополнительные материалы
+						- for (var x = 0; x < 5; x++)
+							+b.doc-link(href="#")
+								.row
+									.col-auto
+										+icon("file") 
+									.col
+										.small.mb-1 стандарты организации и проведения молоджежных форумов
+										.smallest Модуль 1
+									.col-auto
+										+icon("arrow-down")
+	// end sCourceBlock
+
 mixin sCourceBlock(data)
 	// start sCourceBlock
 	+b.sCourceBlock.section#sCourceBlock&attributes(attributes)
@@ -48,7 +73,7 @@ mixin sCourceBlock(data)
 					+item(`Коммуникация`,`Пройти тест`,`btn-primary`).disabled
 					+item(`Эмпатия и сочувствие`,`Пройти тест`,`btn-primary`).disabled
 				.col-xl-3
-					+e.aside
+					+b.aside-cabinet
 						.small.mb-3 2016 — 2022
 						.h3.text-primary Алтай. Территория развития
 						.small.mb-4 Московская область
