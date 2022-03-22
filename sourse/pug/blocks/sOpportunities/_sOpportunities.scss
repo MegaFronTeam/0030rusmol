@@ -97,8 +97,8 @@
 		overflow: hidden;
 		iframe{
 			@include a-cent1;
-			width: 110%;
-			height: 110%;
+			width: calc(100% + 80px);
+			height: calc(100% + 80px);
 			// pointer-events: none;
 		}
 	}
