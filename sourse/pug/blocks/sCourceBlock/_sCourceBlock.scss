@@ -52,6 +52,11 @@
 	&__btn{
 		@extend .btn;
 	}
+	&__title-link{
+		font-size: 24px;
+		line-height: calc(28 / 24);
+		margin-bottom: 28px;
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
@@ -60,3 +65,25 @@
 	@include media-breakpoint-only(xl) {}
 	@include media-breakpoint-down(xl) {}
 } // end.sCourceBlock
+
+
+.doc-link{
+	display: block;
+	margin-bottom: 24px;
+	.row{
+		--bs-gutter-x: 18px;
+	}
+	.icon-arrow-down{
+		font-size: 24px;
+		fill: none;
+		stroke: currentColor;
+	}
+	.icon-file{
+		font-size: 32px;
+		color: $warning;
+	}
+	.smallest{
+		color: #727272;
+		font-size: 12px;
+	}
+}
