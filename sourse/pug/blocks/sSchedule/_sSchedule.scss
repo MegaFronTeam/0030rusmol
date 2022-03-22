@@ -127,3 +127,135 @@
 	@include media-breakpoint-only(xl) {}
 	@include media-breakpoint-down(xl) {}
 } // end.sSchedule
+// start .sSchedule
+.sScheduleCabinet {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	position: relative;
+	z-index: 4;
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		--bs-gutter-y: var(--bs-gutter-x);
+
+	}
+	.section-title{
+		
+	}
+	// --item-h: 208px;
+	&__col{
+		// min-height: var(--item-h);
+	}
+	&__video-wrap{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		@include mt(.6s);
+		opacity: var(--op,0);
+		&::after{
+			content: '';
+			position: absolute;
+			@include a-cent;
+			background: linear-gradient(180deg, rgba(157, 125, 224, 0.74) 0%, rgba(123, 234, 254, 0.74) 100%);
+		}
+	}
+	&__item{
+		border: 1px solid #8C64D8; 
+		position: relative;
+		z-index: 4;
+		overflow: hidden;
+		@include media-breakpoint-up(sm) {
+			border-radius: 40px;
+			padding: rem(36) rem(33);
+		}
+		border-radius: 20px;
+		padding: rem(30) rem(15);
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+		position: absolute;
+		font-size: 14px;
+		position: relative; 
+		background-color: #fff;
+		color: var(--color, #{$body-color});
+		// background-color: $primary;
+		@include mt(.6s);
+		overflow: hidden;
+		transform-origin: bottom left;
+		// transform: translateY(calc(-1 * (var(--title-y,0) + var(--btn-h,0))));
+		// margin-bottom: calc(-1 * (var(--title-y,0) + var(--btn-h,0)));
+		will-change: contents;
+		iframe{
+			width: 200% !important;
+			height: 150% !important;
+			position: absolute;
+			object-fit: cover;
+			@include a-cent1;
+			*{
+				object-fit: cover;
+
+			} 
+			// z-index: -1;
+			pointer-events: none;
+		}
+		&:hover{
+			z-index: 5;
+			background-color: $primary;
+			border-color: transparent;
+			--color: #fff;
+			// --title-y: 76px;
+			--btn-h: calc(var(--btn-sp) + #{rem(56px)});
+			--sc: 1;
+			--op:1;
+		}
+	}
+	--btn-sp: #{rem(37)};
+	&__date{
+		color: var(--color, #727272);
+		@include mt(.6s);
+	}
+	&__title{
+		font-size: rem(30);
+		color: var(--color, #{$primary});
+		@include mt(.6s);
+		max-width: rem(270);
+		line-height: calc(34 / 30);
+		flex-grow: 1;
+		margin-top: var(--title-y,20px);
+	}
+	&__place{
+		// margin-top: auto;
+		flex-grow: 1;
+	}
+	&__btn-wrap{ 
+		padding-top: rem(30);
+		margin-top: auto;
+	}
+	&__btn{
+		@extend .btn, .btn-primary;
+		// width: 100%;
+		font-size: 20px;
+		padding: rem(12) ;
+		margin-top: var(--btn-sp);
+		&.disabled{
+			color: $primary !important;
+			opacity: 1 !important;
+			background: #F7F7F7;
+			border-color: #F7F7F7;
+		}
+		// color: #fff;
+	}
+
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sSchedule

@@ -1,0 +1,15 @@
+mixin sCabinetHead(data)
+	// start sCabinetHead
+	+b.sCabinetHead&attributes(attributes)
+		.container
+			+e.inner
+				.row
+					.col-auto
+						+img("avatar.png",'bg')
+					.col
+						.h3 Ирина Валентиновская
+						.small.mb-3 Ростовская область
+						a(href="mailto:Sample@sample.com") Sample@sample.com 
+					.col-12.order-md-first.text-md-end 
+						a.text-body(href="#").small Выйти из профиля
+	// end sCabinetHead

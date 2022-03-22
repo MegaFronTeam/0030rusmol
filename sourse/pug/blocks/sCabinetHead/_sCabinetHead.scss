@@ -1,0 +1,38 @@
+// start .sCabinetHead
+.sCabinetHead {
+	&__inner{
+
+		background: #DAEF14;
+		border-radius: 32px;
+		padding-bottom: 46px;
+		max-width: rem(1312);
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 32px; 
+		padding-top: 36px;
+		@include media-breakpoint-up(xxl) {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+		padding-left: rem(16);
+		padding-right: rem(16);
+		
+	}
+		.row{
+			align-items: center;
+		}
+		img{
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			margin-bottom: 1rem;
+		}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sCabinetHead

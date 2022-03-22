@@ -605,3 +605,25 @@ h2{
 	--start-anim: ' ';
 	--op-block: 1
 }
+
+.cabinet-nav{
+	margin-top: 32px;
+	margin-bottom: 32px;
+	display: flex;
+	@include roww(20px);
+	list-style: none;
+	a{
+		@extend .btn;
+		font-size: rem(20);
+		// padding: rem(14) rem(32);
+		background-color: #f4f0fb;
+		border: 1px solid #f4f0fb;
+		color: $primary !important;
+		&:hover,
+		&.active{
+			background-color: $primary;
+			border-color: $primary;
+			color: $warning !important;
+		}
+	}
+}

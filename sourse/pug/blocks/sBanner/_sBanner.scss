@@ -123,15 +123,18 @@
 		// top: 0;
 		bottom: 0;
 	}
-	&::after{
-		content: url(../img/svg/fig2.svg);
-		position: absolute;
-		right: -60px;
+	@include media-breakpoint-up(sm) {
+
+		&::after{
+			content: url(../img/svg/fig2.svg);
+			position: absolute;
+			right: -60px;
 		// bottom: 0;
 		top: -160px;
 		z-index: -1;
 		pointer-events: none;
 	}
+}
 	&__stroke-title{ 
 		max-width: rem(1100);
 		position: relative;
