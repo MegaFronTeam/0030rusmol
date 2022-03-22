@@ -79,7 +79,7 @@
 	&__btn{
 		@extend .btn, .btn-warning;
 		font-size: 24px !important;
-		padding: 10px 15px !important;
+		padding: 10px 10px !important;
 		color: $primary ;
 		border-radius: 8px;
 		&:hover,

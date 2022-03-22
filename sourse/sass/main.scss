@@ -125,6 +125,7 @@ $output-bourbon-deprecation-warnings: false;
 @import '../pug/blocks/sCabinetHead/_sCabinetHead';
 @import '../pug/blocks/sCourceBlock/_sCourceBlock';
 @import '../pug/blocks/sLessonBlock/_sLessonBlock';
+@import '../pug/blocks/sTestBlock/_sTestBlock';
 
 @import "media"; // Всегда в конце
 

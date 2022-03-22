@@ -35,13 +35,19 @@ mixin logo()
 			img(src="img/svg/logo.svg", alt="") 
 
 
-mixin pagehead(t)
+mixin pagehead(t, t2)
 	+b.page-head
 		.container 
 			.row 
-				.col
+				.col-auto
+					
 					+b.btn-back(href="#")
 						+icon('arrow-left')
+				.col
+					if t2
+						.small Модуль 2
+
 				.col-auto
 					a.small(href="#") Алтай. Территория развития 
-			h1= t
+			if !t2
+				h1= t
