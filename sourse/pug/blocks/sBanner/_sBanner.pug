@@ -9,3 +9,19 @@ mixin sBanner(data)
 				+pic('banner-img.png')
 				
 	// end sBanner
+mixin sBanner2(data)
+	// start sBanner
+	+b.SECTION.sBanner-page.section#sBanner&attributes(attributes)
+		.container
+			+e.stroke-title Алтай.  <br> Территория развития
+			+e.inner
+				.row
+					.col
+						h2 Прими  участие  в&nbsp;событии!
+					.col-md-auto
+						+e.reg-block
+							a.btn.btn-primary.disabled(href="#") Регистрация недоступна
+							p.disabled Регистрация скоро будет доступна
+				+pic('banner-img2.png')
+				
+	// end sBanner

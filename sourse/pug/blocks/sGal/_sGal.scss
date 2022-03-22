@@ -21,9 +21,9 @@
 	&__slide{
 		@include media-breakpoint-up(sm) {
 
-			width: rem(416);
+			width: rem(326);
 		}
-		width: rem(300);
+		width: rem(240);
 	}
 	&__img-wrap{
 		@include block(416,398);

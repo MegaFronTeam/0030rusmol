@@ -6,7 +6,8 @@
 		{"name":"Пройти квест", "url":"#", "icon":"game"}
 	],
 	"social":[
-		"fb","instagram","telegram"
+		{"icon":"telegram", "link":"https://t.me/rosmolodez"},
+		{"icon":"vk", "link":"https://vk.com/public204648084"}
 	],
 	"index":{
 		"head": {

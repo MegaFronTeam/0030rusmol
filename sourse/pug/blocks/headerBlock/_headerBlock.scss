@@ -46,8 +46,21 @@
 		z-index: 2;
 		position: relative;
 	}
-	h1{
-		margin-bottom: 37px;
+	&__sub-title{
+		font-size: .5em;
+		font-weight: 500;
+		position: absolute;
+		right: 0;
+		bottom: .2em;
+		color: #252525;
+		line-height: 1;
+	}
+	&__title-wrap{
+		position: relative;
+		h1{
+			font-size: 1em;
+			margin-bottom: 37px;
+		}
 		@include media-breakpoint-up(xxl) {
 			font-size: 336.264px;
 		}

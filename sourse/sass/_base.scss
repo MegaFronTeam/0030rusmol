@@ -268,9 +268,9 @@ ul {
 		// box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.9);
 		border-radius: 40px;
 		@include media-breakpoint-up(sm){
-		padding: rem(8);
+		padding: rem(8) rem(4);
 	}
-	padding: rem(4);
+	padding: rem(4) rem(2);
 		margin-bottom: 29px;
 	}
 	&__btn {
@@ -279,7 +279,11 @@ ul {
 		@include media-breakpoint-up(sm){
 			padding: rem(6) rem(24);
 			font-size: 1rem;
+			margin-left: rem(4);
+			margin-right: rem(4);
 		}
+		margin-left: rem(2);
+		margin-right: rem(2);
 		font-size: 14px;
 		padding: rem(6) rem(10);
 		border-radius: rem(40px);
@@ -565,7 +569,7 @@ h2{
 }
 .animate-page{ 
 	.headerBlock__slider,  
-	h1{
+	.headerBlock__title-wrap{
 		@include mt(2s);
 		opacity: var(--start-anim,0);
 		transition-delay: var(--st1);
@@ -586,7 +590,7 @@ h2{
 	.top-nav{ 
 		transform: translateY(var(--start-anim,-100%));  
 	}
-	h1{ 
+	.headerBlock__title-wrap{ 
 		transform: translateX(var(--start-anim,-100%));
 	} 
 	.headerBlock__slider{
