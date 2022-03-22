@@ -1,0 +1,24 @@
+mixin sCourceBlock(data)
+	// start sCourceBlock
+	+b.sCourceBlock.section#sCourceBlock&attributes(attributes)
+		.container
+			.row
+				.col-xl-9
+					mixin item(t,b, cl)
+						+e.item&attributes(attributes)
+							+e.sm-title Часть 1
+							+e.title!= t
+							+e.btn(href="#" class= cl)= b
+					+item(`Устойчивость к неопределённости и умение ориентироваться в непредсказуемой̆ реальности`,`Пройден`,`btn-light`)
+					+item(`Креативность и способность создавать новое`,`Пройден`,`btn-light`)
+					+item(`Ориентация на результат  `,`Пройти тест`,`btn-primary`)
+					+item(`Коммуникация`,`Пройти тест`,`btn-primary`).disabled
+					+item(`Эмпатия и сочувствие`,`Пройти тест`,`btn-primary`).disabled
+				.col-xl-3
+					+e.aside
+						.small.mb-3 2016 — 2022
+						.h3.text-primary Алтай. Территория развития
+						.small.mb-4 Московская область
+						a.btn.btn-primary(href="#").mb-3.w-100.disabled  Зарегистрироваться
+						.text-center.small Пройдите еще 3&nbsp;теста для того чтобы зарегистрироваться на&nbsp;мероприятие
+	// end sCourceBlock

@@ -33,3 +33,15 @@ mixin logo()
 	+b.logo-link
 		a(href="https://fadm.gov.ru/" target="_blank")
 			img(src="img/svg/logo.svg", alt="") 
+
+
+mixin pagehead(t)
+	+b.page-head
+		.container 
+			.row 
+				.col
+					+b.btn-back(href="#")
+						+icon('arrow-left')
+				.col-auto
+					a.small(href="#") Алтай. Территория развития 
+			h1= t

@@ -627,3 +627,40 @@ h2{
 		}
 	}
 }
+
+
+.btn-back{
+	width: 32px;
+	height: 32px;
+	@extend .btn, .btn-primary;
+	padding: 0 !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	.icon{
+		font-size: 16px;
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 3px;
+	}
+}
+
+.page-head{
+	margin-top: 48px;
+	margin-bottom: 48px;
+	h1{
+		margin-top: 24px;
+		@include rfs(80px);
+	}
+}
+
+
+.btn-light{
+	color: $primary !important;
+}
+
+
+.btn.disabled{
+	opacity: 0.2;
+}
