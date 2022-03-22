@@ -63,7 +63,10 @@
 	}
 	&__title{
 		line-height: 1;
-		text-align: right;
+		@include media-breakpoint-up(sm) {
+
+			text-align: right;
+		}
 		color: #727272;
 		font-size: rem(18);
 	}

@@ -103,7 +103,35 @@
 } // end.sBanner
 // start .sBanner
 .sBanner-page {
-
+	position: relative;
+	z-index: 2;
+	&::before{
+		content: '';
+		position: absolute;
+		@include media-breakpoint-up(xl){
+			--size: 1000px
+		}
+		--size: 500px;
+		width: var(--size);
+		height: var(--size); 
+		background: #8C64D8;
+		opacity: 0.2;
+		border-radius: 50%;
+		filter: blur(40px); 
+		z-index: -1;
+		right: calc(-1 * var(--size) / 2);
+		// top: 0;
+		bottom: 0;
+	}
+	&::after{
+		content: url(../img/svg/fig2.svg);
+		position: absolute;
+		right: -60px;
+		// bottom: 0;
+		top: -160px;
+		z-index: -1;
+		pointer-events: none;
+	}
 	&__stroke-title{ 
 		max-width: rem(1100);
 		position: relative;

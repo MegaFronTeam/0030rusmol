@@ -3,6 +3,8 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
+	position: relative;
+	z-index: 4;
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		--bs-gutter-y: var(--bs-gutter-x);
@@ -34,7 +36,7 @@
 	&__item{
 		border: 1px solid #8C64D8; 
 		position: relative;
-		z-index: 2;
+		z-index: 4;
 		overflow: hidden;
 		@include media-breakpoint-up(sm) {
 			border-radius: 40px;
@@ -48,8 +50,8 @@
 		min-height: var(--item-h);
 		position: absolute;
 		font-size: 14px;
-		position: relative;
-		z-index: 2;
+		position: relative; 
+		background-color: #fff;
 		color: var(--color, #{$body-color});
 		// background-color: $primary;
 		@include mt(.6s);
@@ -72,7 +74,7 @@
 			pointer-events: none;
 		}
 		&:hover{
-			z-index: 4;
+			z-index: 5;
 			background-color: $primary;
 			border-color: transparent;
 			--color: #fff;
