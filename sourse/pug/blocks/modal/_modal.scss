@@ -5,15 +5,30 @@
 .fancybox__content {
 	padding: 0;
 	max-width: 100%;
+	.btn{
+		padding: 12px !important;
+	}
 }
 .modal-win {
+	&--sm{
+		// max-width: rem(340);
+		width: rem(340);
+		.h3{
+			margin-bottom: rem(25);
+			font-weight: normal;
+		}
+		p{
+			font-size: 18px;
+		}
+	}
+	border-radius: 20px;
 	// display: block;
 	background-color: #fff;
 	max-width: 100%;
 	position: relative;
 	width: rem(1500);
 	// min-height: 100%; 
-	padding: 40px;
+	padding: rem(32px);
 
 	.modal-content {
 		// max-width: 485px;
