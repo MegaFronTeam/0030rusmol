@@ -5,3 +5,4 @@
 5. <https://megafronteam.github.io/0030rusmol/public/05-test-page.html>
 6. <https://megafronteam.github.io/0030rusmol/public/04-kurs-page-01.html>
 7. <https://megafronteam.github.io/0030rusmol/public/05-test-page-01.html>
+8. <https://megafronteam.github.io/0030rusmol/public/00-modal.html>
