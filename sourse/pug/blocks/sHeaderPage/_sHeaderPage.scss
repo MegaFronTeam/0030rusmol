@@ -57,14 +57,24 @@
 	}
 	&__footer{
 		margin-top: auto;
-		@include roww(15px, m);
+		@include roww(25px, m);
+		align-items: center;
 		display: flex;
 		flex-wrap: wrap;
-		.btn{
+		* {
 			margin-top: 1rem;
 		}
 	}
 
+	&__footer-text{
+		display: inline-flex;
+		align-items: center;
+		// margin-left: rem(20);
+		img{
+			margin: 0;
+			margin-right: rem(10);
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

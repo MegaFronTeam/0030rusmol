@@ -13,4 +13,7 @@ mixin sHeaderPage(data)
 				+e.footer
 					a.btn.btn-primary(href="#") Пройти курс
 					a.btn.btn-primary(href="#" ).disabled Регистрация не доступна
+					+e.footer-text 
+						img(src="img/svg/check.svg", alt="")
+						| Курс пройден, тест здан
 	// end sHeaderPage

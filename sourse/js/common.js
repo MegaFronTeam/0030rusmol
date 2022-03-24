@@ -283,7 +283,7 @@ function eventHandler() {
 		slidesPerView: 'auto',
 		spaceBetween: 32, 
 		rewind: true,
-		speed: 1500,
+		// speed: 1500,
 		autoplay: {
 			delay: 1000,
 		},
