@@ -282,7 +282,7 @@ function eventHandler() {
 	const galsl = new Swiper('.sGal__slider--js', { 
 		slidesPerView: 'auto',
 		spaceBetween: 32, 
-		loop: true,
+		rewind: true,
 		speed: 1500,
 		autoplay: {
 			delay: 1000,
