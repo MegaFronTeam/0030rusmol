@@ -12,14 +12,22 @@
 		
 	}
 	&__col{
-		p{
+		*{
 			color: #727272;
+			font-size: 1.2rem;
+			line-height: 1.2;
+
+		}
+		ul{
+			padding-left: 1em;
+		}
+		p{
 			margin-bottom: 1em;
 			max-width: rem(750);
 			@include media-breakpoint-up(xxl) {
-				font-size: 32px;
+				// font-size: 32px;
 			}
-			@include rfs(26px);
+			// @include rfs(26px);
 		}
 	}
 	&__item{

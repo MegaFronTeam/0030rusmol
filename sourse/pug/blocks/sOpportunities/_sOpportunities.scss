@@ -96,6 +96,7 @@
 		border-radius: 40px;
 		overflow: hidden;
 		iframe{
+			background-color: $warning;
 			@include a-cent1;
 			width: calc(100% + 80px);
 			height: calc(100% + 80px);

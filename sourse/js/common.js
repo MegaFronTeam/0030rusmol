@@ -133,7 +133,7 @@ const JSCCommon = {
 		}, { passive: true });
 	},
 	animateScroll() {
-		$(document).on('click', ".scroll-link-js", function () {
+		$(document).on('click', ".menu a, .scroll-link-js", function () {
 			const elementClick = $(this).attr("href");
 			if (!document.querySelector(elementClick)) {
 				$(this).attr("href", '/' + elementClick)
