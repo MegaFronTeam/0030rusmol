@@ -35,7 +35,7 @@ mixin logo()
 			img(src="img/svg/logo.svg", alt="") 
 
 
-mixin pagehead(t, t2)
+mixin pagehead(t, t2=' Модуль 2')
 	+b.page-head
 		.container 
 			.row 
@@ -45,9 +45,10 @@ mixin pagehead(t, t2)
 						+icon('arrow-left')
 				.col
 					if t2
-						.small Модуль 2
+						.small.pt-1= t2
 
 				.col-auto
 					a.small(href="#") Алтай. Территория развития 
 			if !t2
 				h1= t
+			block

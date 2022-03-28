@@ -27,7 +27,8 @@ block pagecontent
 	//- 	+b.Ul.cabinet-nav
 	//- 		li: a(href="#").active  Мои активности
 	//- 		li: a(href="#")  Личная информация
-	+pagehead(title)
+	+pagehead(title,'Название курса в одну строку')
+		h1= title
 	+sCourceBlock4-1
 		+sLessonBlock
 	+sContact
