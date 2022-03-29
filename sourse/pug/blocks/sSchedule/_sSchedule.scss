@@ -102,11 +102,11 @@
 		margin-top: auto;
 	}
 	&__btn-wrap{
-		position: relative;
-		transform: scaleY(var(--sc, 0));
+		// position: relative;
+		// transform: scaleY(var(--sc, 0));
 		height: var(--btn-h, 1px);
-		overflow: hidden;
-		transform-origin: bottom left;
+		// overflow: hidden;
+		// transform-origin: bottom left;
 		@include mt(.6s);
 	}
 	&__btn{
@@ -115,6 +115,10 @@
 		font-size: 20px;
 		padding: rem(12) ;
 		margin-top: var(--btn-sp);
+		&::before{
+			content: '';
+			@include a-cent;
+		}
 		// color: #fff;
 	}
 
@@ -237,6 +241,10 @@
 	}
 	&__btn{
 		@extend .btn, .btn-primary;
+		&::before{
+			content: '';
+			@include a-cent;
+		}
 		// width: 100%;
 		font-size: 20px;
 		padding: rem(12) ;
