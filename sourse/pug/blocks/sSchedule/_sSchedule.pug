@@ -14,14 +14,14 @@ mixin sSchedule(data)
 							+e.row.row
 								mixin item(t, p)
 									+e.col.col-xl-4.col-md-6
-										+e.item
+										+e.item(href="#")
 											+e.video-wrap
 												<iframe src="https://vk.com/video_ext.php?oid=-29370157&id=456239303&hash=ce3ad05120e59891&&controls=0&disablekb=1&showinfo=0?loop=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
 											//- +e.date 2016 — 2022
 											+e.title= t
 											+e.place= p
 											+e.btn-wrap
-												+e.btn(href="#")  Подробнее
+												+e.btn()  Подробнее
 								+item(`Таврида`,`Республика Крым`)
 								+item(`Евразия Global`,`Оренбургская область`)
 								+item(`ШУМ`,`Калининградская область`)
@@ -40,7 +40,7 @@ mixin sScheduleCabinet(data)
 			block
 			mixin item(t, p, btn='Пройти курс')
 				+e.col.col-xl-4.col-md-6
-					+e.item
+					+e.item(href="#")
 						+e.video-wrap
 							<iframe src="https://vk.com/video_ext.php?oid=-29370157&id=456239303&hash=ce3ad05120e59891&&controls=0&disablekb=1&showinfo=0?loop=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
 						.row
@@ -51,7 +51,7 @@ mixin sScheduleCabinet(data)
 						+e.title= t
 						+e.place= p
 						+e.btn-wrap 
-							+e.btn(href="#")&attributes(attributes)= btn
+							+e.btn()&attributes(attributes)= btn
 			+e.row.row
 				.col-12.h3 Группа 1
 				+item(`Таврида`,`Республика Крым`)
