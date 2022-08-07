@@ -30,7 +30,8 @@ mixin sLk(data)
 							+item(true)
 							+item()
 							+item(true)
-					.tabs__content Тесты
+					.tabs__content
+						+lk-test
 					.tabs__content
 						+lk-certificates
 	// end sLk
@@ -61,3 +62,18 @@ mixin lk-certificates()
 			+item
 			+item
 			+item
+
+mixin lk-test()
+	mixin item(done=true,disabled=false)
+		.sCourceBlock__item(class=(disabled ? "disabled" : ""))
+			.sCourceBlock__sm-title Часть 1
+			.sCourceBlock__title Устойчивость к неопределённости и умение ориентироваться в непредсказуемой̆ реальности
+			if done
+				a.sCourceBlock__btn.btn-light(href='#') Пройден
+			else
+				a.sCourceBlock__btn.btn-primary(href='#') Пройти тест
+	+item()
+	+item()
+	+item(false)
+	+item(false,true)
+	+item(false,true)
