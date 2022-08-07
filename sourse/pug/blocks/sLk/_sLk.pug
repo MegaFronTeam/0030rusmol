@@ -1,0 +1,63 @@
+mixin sLk(data)
+	// start sLk
+	+b.sLk.section#sLk&attributes(attributes)
+		.container
+			+lk-person
+			.tabs
+				.tabs__caption
+					.tabs__btn.active Курсы
+					.tabs__btn Тесты
+					.tabs__btn Сертификаты
+				.tabs__wrap
+					.tabs__content.active
+						.row
+							mixin item(kurs)
+								.sScheduleCabinet__col.col-xl-4.col-md-6
+									a.sScheduleCabinet__item(href='#')
+										.sScheduleCabinet__video-wrap
+											iframe(src='https://vk.com/video_ext.php?oid=-29370157&id=456239303&hash=ce3ad05120e59891&&controls=0&disablekb=1&showinfo=0?loop=1' width='853' height='480' allow='autoplay; encrypted-media; fullscreen; picture-in-picture;' frameborder='0' allowfullscreen='')
+										.row
+											if kurs
+												.col-auto.text-info Курс пройден
+											else
+												.col-auto.text-new Новый курс
+										.sScheduleCabinet__title Название курса в одну или несколько строк
+										.sScheduleCabinet__btn-wrap
+											if kurs
+												.sScheduleCabinet__btn Пройти курс
+											else
+												.sScheduleCabinet__btn Получить сертификат
+							+item(true)
+							+item()
+							+item(true)
+					.tabs__content Тесты
+					.tabs__content
+						+lk-certificates
+	// end sLk
+
+
+mixin lk-person()
+	+b.lk-person
+		+e.head
+			+e.change(href="#") Сменить пароль
+			+e.reset(href="#") Выйти из профиля
+		+e.name Ирина Валентиновская
+		+e.caption Международный молодежный форум «Евразия»
+		+e.role
+			+e.role-title Роль дирекции
+			+e.mail(href="mailto:Sample@sample.com") Sample@sample.com
+
+mixin lk-certificates()
+	+b.lk-certificates
+		.row
+			mixin item()
+				.col-xl-4.col-md-6
+					+e.item
+						+e.pic(href="#" data-fancybox data-src="img/certificate.jpg")
+							img(src="img/certificate.jpg", alt="")
+						+e.title-wrap
+							+e.title Название курса в одну или несколькоНазвание курса в одну или несколько строк строк
+							+e.download(href="#") Скачать
+			+item
+			+item
+			+item
