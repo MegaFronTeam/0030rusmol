@@ -1,0 +1,12 @@
+mixin sVideoGal(data)
+	// start sVideoGal
+	+b.sVideoGal.section#sVideoGal&attributes(attributes)
+		.container
+			.row
+				mixin video()
+					.col-md-6
+						+e.link(data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=Ok1dawHTbkI" data-width="1280" data-height="720")
+							img(src="img/video.jpg", alt="")
+				+video
+				+video
+	// end sVideoGal

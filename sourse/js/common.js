@@ -1,5 +1,5 @@
 "use strict";
-const JSCCommon = { 
+const JSCCommon = {
 	modalCall() {
 		const link = '[data-fancybox="modal"], .link-modal-js';
 
@@ -21,8 +21,8 @@ const JSCCommon = {
 				PREV: "Назад",
 			},
 		});
-		document.querySelectorAll(".modal-close-js").forEach(el=>{
-			el.addEventListener("click", ()=>{
+		document.querySelectorAll(".modal-close-js").forEach(el => {
+			el.addEventListener("click", () => {
 				Fancybox.close();
 			})
 		})
@@ -77,7 +77,7 @@ const JSCCommon = {
 		}
 
 	},
-	mobileMenu() { 
+	mobileMenu() {
 		const menu = document.querySelector(".menu-mobile--js");
 		if (!menu) return;
 		this.toggleMenu();
@@ -94,7 +94,7 @@ const JSCCommon = {
 	},
 
 	// tabs  .
-	tabscostume(tab) { 
+	tabscostume(tab) {
 		$('.' + tab + '__caption').on('click', '.' + tab + '__btn:not(.active)', function (e) {
 			$(this)
 				.addClass('active').siblings().removeClass('active')
@@ -110,7 +110,7 @@ const JSCCommon = {
 		// mask for input
 		let InputTel = [].slice.call(document.querySelectorAll('input[type="tel"]'));
 		InputTel.forEach(element => element.setAttribute("pattern", "[+][0-9]{1}[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}"));
-		Inputmask({"mask":"+9(999)999-99-99", showMaskOnHover: false}).mask(InputTel);
+		Inputmask({ "mask": "+9(999)999-99-99", showMaskOnHover: false }).mask(InputTel);
 	},
 	// /inputMask
 	ifie() {
@@ -118,7 +118,7 @@ const JSCCommon = {
 		if (isIE11) {
 			document.body.insertAdjacentHTML("beforeend", '<div class="browsehappy">	<p class=" container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p></div>');
 		}
-	}, 
+	},
 	heightwindow() {
 		// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 		let vh = window.innerHeight * 0.01;
@@ -140,7 +140,7 @@ const JSCCommon = {
 			}
 			else {
 				let destination = $(elementClick).offset().top;
-				$('html, body').animate({ scrollTop: destination   }, 1000);
+				$('html, body').animate({ scrollTop: destination }, 1000);
 				return false;
 			}
 		});
@@ -213,7 +213,7 @@ function eventHandler() {
 	JSCCommon.makeDDGroup();
 	// JSCCommon.toggleShow(".catalog-block__toggle--desctop", '.catalog-block__dropdown');
 	JSCCommon.animateScroll();
-	
+
 	// JSCCommon.CustomInputFile(); 
 	var x = window.location.host;
 	let screenName;
@@ -268,7 +268,7 @@ function eventHandler() {
 		},
 	}
 
-	const swiper4 = new Swiper('.headerBlock__slider--js', { 
+	const swiper4 = new Swiper('.headerBlock__slider--js', {
 		slidesPerView: 'auto',
 		spaceBetween: 32,
 		freeMode: true,
@@ -279,32 +279,74 @@ function eventHandler() {
 		},
 	});
 	// modal window
-	const galsl = new Swiper('.sGal__slider--js', { 
+	const galsl = new Swiper('.sGal__slider--js', {
 		slidesPerView: 'auto',
-		spaceBetween: 32, 
+		spaceBetween: 32,
 		rewind: true,
 		// speed: 1500,
 		autoplay: {
 			delay: 1000,
 		},
 	});
+	const partnersSlider = new Swiper('.sPartners__slider--js', {
+		slidesPerView: '1',
+		spaceBetween: 16,
+		pagination: {
+			el: ' .swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+		breakpoints:{
+			992:{
+				slidesPerView: '4',
+				spaceBetween: 32,
+			},
+			576:{
+				slidesPerView: '2',
+			}
+		}
+	});
+	// var gallery = [
+	// 	{
+	// 		src: "../img/programm.png",
+	// 		thumb: "../img/programm-thumb.png",
+	// 		caption: "First image",
+	// 	},
+	// 	{
+	// 		src: "../img/programm.png",
+	// 		thumb: "../img/programm-thumb.png",
+	// 		caption: "Second image",
+	// 	},
+	// 	{
+	// 		src: "../img/programm.png",
+	// 		thumb: "../img/programm-thumb.png",
+	// 		caption: "Third image",
+	// 	},
+	// ];
+
+	// Fancybox.show(gallery, {
+	// 	Image: {
+	// 		// Image-specific options go here, for example:
+	// 		// click: 'close'
+	// 	},
+	// });
 	// modal window
 
 
-// 	var player;
+	// 	var player;
 
-// function onYouTubeIframeAPIReady() {
-//     player = new YT.Player('.hover-video', {
-//         events: {
-//             'onReady': onPlayerReady
-//         }
-//     });
-// }
+	// function onYouTubeIframeAPIReady() {
+	//     player = new YT.Player('.hover-video', {
+	//         events: {
+	//             'onReady': onPlayerReady
+	//         }
+	//     });
+	// }
 
-// function onPlayerReady(event) {
-//     player.mute();
-//     player.playVideo();
-// }
+	// function onPlayerReady(event) {
+	//     player.mute();
+	//     player.playVideo();
+	// }
 
 	// var player = document.querySelector('#lg-player'); 
 	// 	player.contentWindow.postMessage(JSON.stringify({
@@ -313,22 +355,22 @@ function eventHandler() {
 	// 			volume: 0
 	// 		}
 	// 	})); 
-	$('.sSchedule__item').each(function(el){
-    var _this = $(this);
-    _this.on('mouseover', function(ev) {
- 
-      _this[0].querySelector('iframe').src += "&autoplay=1";
-      ev.preventDefault();
+	$('.sSchedule__item').each(function (el) {
+		var _this = $(this);
+		_this.on('mouseover', function (ev) {
 
-    });
-	}); 
+			_this[0].querySelector('iframe').src += "&autoplay=1";
+			ev.preventDefault();
+
+		});
+	});
 	let anim = document.querySelector("body.animate-page");
 	if (anim) {
-		
+
 		setTimeout(() => {
 			anim.classList.add('start-progress')
 		}, 100);
-		
+
 		setTimeout(() => {
 			anim.classList.add('start-page')
 		}, 3100);

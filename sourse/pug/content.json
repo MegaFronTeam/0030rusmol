@@ -3,7 +3,8 @@
 		{ "name":"Главная", "url":"#"},
 		{	"name":"О форумах", "url":"/#sSchedule"},
 		{"name":"Контакты", "url":"#"},
-		{"name":"Пройти квест", "url":"#", "icon":"game"}
+		{"name":"Пройти квест", "url":"#", "icon":"game"},
+		{"name":"Цифровая программа", "url":"#"}
 	],
 	"social":[
 		{"icon":"telegram", "link":"https://t.me/rosmolodez"},

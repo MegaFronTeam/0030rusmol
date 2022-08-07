@@ -52,3 +52,18 @@ mixin pagehead(t, t2=' Модуль 2')
 			if !t2
 				h1= t
 			block
+
+mixin pagehead2(t, t2=' Модуль 2')
+	+b.page-head
+		.container 
+			.row 
+				.col-auto
+					
+					+b.btn-back(href="#")
+						+icon('arrow-left')
+				.col
+					if t2
+						.small.pt-1= t2
+			if !t2
+				h1= t
+			block

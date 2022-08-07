@@ -1,0 +1,22 @@
+mixin sPartners(data)
+	// start sPartners
+	+b.SECTION.sPartners.section#sPartners&attributes(attributes)
+		.container
+			h3 Партнеры мероприятия
+			+e.slider--js.swiper
+				.swiper-wrapper
+					mixin slide(pic,title)
+						.swiper-slide
+							+e.slide
+								+pic(`partner-${pic}.png`,'',0)
+								+e.title!=title
+					+slide(1,`Евростандарт`)
+					+slide(2,`Riffpro`)
+					+slide(3,`Уют`)
+					+slide(4,`Instyle`)
+					+slide(1,`Евростандарт`)
+					+slide(2,`Riffpro`)
+					+slide(3,`Уют`)
+					+slide(4,`Instyle`)
+				.swiper-pagination
+	// end sPartners

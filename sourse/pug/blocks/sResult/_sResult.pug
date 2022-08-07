@@ -1,0 +1,19 @@
+mixin sResult(data)
+	// start sResult
+	+b.sResult.section#sResult&attributes(attributes)
+		.container
+			.row
+				.col-lg-6
+					+pic('head-page.jpg','',0)
+				.col-lg-6
+					+e.block
+						+e.wrap
+							+e.level Высокий уровень!
+							+e.level-caption Вы умеете отстаивать свое мнение, склонны проявлять инициативу в общении, любите и умеете выполнять задачи, связанные с организацией досуга, мероприятий и т.д.
+							+e.file(href="#")
+								+e.file-pic
+									+icon('file')
+								+e.file-name стандарты организации и проведения молодежных форумов
+								+e.file-download
+									+icon('download')
+	// end sResult
