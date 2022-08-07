@@ -1,0 +1,26 @@
+mixin sAcc(data)
+	// start sAcc
+	+b.sAcc.section#sAcc&attributes(attributes)
+		.container
+			.row
+				.col-lg-6
+					h1 Личный кабинет
+					+e.caption Войдите в систему, чтобы воспользоваться всеми преимуществами
+					+form-wrap
+						.row
+							.col-lg-6
+								+input('Введите e-mail','text','Ваш логин')
+							.col-lg-6
+							.col-lg-6
+								+input('Введите пароль','password','Пароль')
+							.col-lg-6
+							.col-lg-6
+								.sAcc__forget!=`Забыли пароль? <a href="#"> Восстановить</a>`
+								a.sAcc__login-btn.btn.btn-primary(href="#") Войти
+				.col-lg-6
+					+e.info-block
+						//- +pic('acc-bg.jpg','',0)
+						+e.info
+							+e.info-caption Еще не зарегистрировались в системе?<br>Создайте аккаунт, это займет все 5 минут
+							+e.info-btn.btn(href="#") Зарегистрироваться
+	// end sAcc

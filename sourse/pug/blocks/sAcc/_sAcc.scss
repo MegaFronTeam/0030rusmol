@@ -1,0 +1,123 @@
+// start .sAcc
+.sAcc {
+	--sPT: #{rem(56)};
+	--sPB: #{rem(47)};
+	// --sTPB: #{rem()};
+	.row {
+		--bs-gutter-x: #{rem(32)};
+		--bs-gutter-y: #{rem(32)};
+	}
+	h1 {
+		@include media-breakpoint-up(lg) {
+			font-size: rem(80);
+		}
+		font-size: rem(50);
+		line-height: 100%;
+		margin-bottom: rem(32);
+	}
+	&__caption {
+		@include media-breakpoint-up(lg) {
+			max-width: rem(378);
+		}
+		font-size: rem(18);
+		line-height: calc(21 / 18);
+		margin-bottom: rem(32);
+	}
+	.form-wrap__input-title {
+		font-size: rem(12);
+		line-height: calc(14 / 12);
+		margin-bottom: rem(8);
+		display: inline-block;
+	}
+	.form-wrap__input {
+		padding: rem(17) rem(18);
+		border-radius: 8px;
+		border: 1px solid #c8c8c8;
+		font-weight: 500;
+		font-size: rem(14);
+		line-height: calc(16 / 14);
+		&::placeholder {
+			color: #c8c8c8;
+		}
+	}
+	&__forget {
+		font-size: rem(14);
+		line-height: calc(16 / 14);
+		margin-bottom: rem(40);
+	}
+	&__login-btn {
+		display: block;
+	}
+	&__info-block {
+		height: 100%;
+		min-height: rem(300);
+		position: relative;
+		border-radius: 32px;
+		overflow: hidden;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(0deg, #8c64d8, #8c64d8), url(../img/acc-bg.jpg);
+			background-blend-mode: multiply, normal;
+			background-size: cover;
+		}
+		padding: rem(16);
+		justify-content: center;
+		@include media-breakpoint-up(lg) {
+			padding-top: rem(173);
+			padding: rem(60);
+			justify-content: unset;
+		}
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 2;
+		position: relative;
+	}
+	&__info-caption {
+		font-size: rem(18);
+		line-height: calc(21 / 18);
+		color: #ffffff;
+		margin-bottom: rem(32);
+		text-align: center;
+	}
+	&__info-btn {
+		background-color: transparent;
+		color: #ffffff;
+		border-color: #ffffff;
+		padding: rem(16);
+		width: rem(304);
+		max-width: 90%;
+		transition-duration: 0.4s;
+		&:hover,
+		&:focus,
+		&:active,
+		&:active:focus {
+			background-color: #ffffff;
+			color: #000000;
+		}
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sAcc
