@@ -126,56 +126,14 @@
 										</a>
 									</div>
 								</div>
-								<a class="sInfoBlock__show" href="#" data-fancy="gallery-js">
+								<a class="sInfoBlock__show" href="#" data-fancybox="gallery" data-src="https://vk.com/video_ext.php?oid=-63758929&amp;id=456241068&amp;hash=7eaebe1855265c5c&amp;hd=2&amp;autoplay=1" data-thumb="https://lipsum.app/id/32/200x150" data-type="iframe">
 									<svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M27.5197 8.5C27.5197 9.98525 21.5153 16.5 14.1085 16.5C6.70167 16.5 0.697266 10.5067 0.697266 8.5C0.697266 6.49329 6.70167 0.5 14.1085 0.5C21.5153 0.5 27.5197 7.01475 27.5197 8.5Z" fill="#8C64D8"></path>
 										<circle cx="14.1086" cy="8.50005" r="5.27703" fill="white"></circle>
 									</svg><span>Просмотреть деловую программу</span>
 								</a>
-								<script>
-									const gallery_items = [
-											{
-												src: "https://vk.com/video_ext.php?oid=-63758929&id=456241068&hash=7eaebe1855265c5c&hd=2&autoplay=1",
-												thumb: "https://lipsum.app/id/32/200x150",
-												type: 'iframe',
-											},
-											{
-												src: "img/programm.png",
-												thumb: "img/programm.png",
-											},
-											{
-												src: "https://lipsum.app/id/23/1600x1200",
-												thumb: "https://lipsum.app/id/23/200x150",
-											},
-										];
-										
-										const gallery_options = {
-											slug: "gallery",
-											startIndex: 0,
-										};
-									
-										document
-											.querySelector('[data-fancy="gallery-js"]')
-											.addEventListener("click", function (e) {
-												e.preventDefault();
-												gallery_options.startIndex = 0;
-									
-												Fancybox.show(gallery_items, gallery_options);
-											});
-									
-										function startFancyboxFromUrl() {
-											if (!Fancybox.getInstance()) {
-												const { hash, slug, index } = Fancybox.Plugins.Hash.getParsedURL();
-									
-												if (hash && slug === gallery_options.slug) {
-													gallery_options.startIndex = index - 1;
-									
-													Fancybox.show(gallery_items, gallery_options);
-												}
-											}
-										}
-									
-								</script>
+								<div class="sInfoBlock__show-gallery d-none"><a data-fancybox="gallery" href="img/programm.png"><img src="img/programm.png" alt=""/></a><a data-fancybox="gallery" href="img/programm.png"><img src="img/programm.png" alt=""/></a><a data-fancybox="gallery" href="img/programm.png"><img src="img/programm.png" alt=""/></a>
+								</div>
 							</div>
 						</div>
 					</div>

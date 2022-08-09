@@ -21,23 +21,6 @@ const JSCCommon = {
 				PREV: "Назад",
 			},
 		});
-		
-		// Fancybox.bind('[data-fancybox="gallery"]', { 
-		// 	type: 'iframe',
-		// 	groupAll : true, // Group all items
-		// 	on : {
-		// 		ready : (fancybox) => {
-		// 			console.log(`fancybox #${fancybox.id} is ready!`);
-		// 		}
-		// 	}
-		// });
-
-		
-
-window.addEventListener("hashchange", startFancyboxFromUrl, false);
-
-startFancyboxFromUrl();
-
 		document.querySelectorAll(".modal-close-js").forEach(el => {
 			el.addEventListener("click", () => {
 				Fancybox.close();
