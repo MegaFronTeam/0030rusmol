@@ -36,7 +36,7 @@ mixin sAccReg(data)
 					h1 Регистрация
 					+e.caption Введите ваши данные чтобы воспользоваться всеми преимуществами системы
 					+form-wrap
-						.row
+						+e.row.row
 							.col-lg-6
 								+input('Ваша фамилия','text','Фамилия')
 							.col-lg-6
@@ -48,11 +48,25 @@ mixin sAccReg(data)
 								+input('Введите пароль','password','Пароль')
 							.col-lg-6
 								+input('Повторите пароль','password','Повторите пароль')
+							.col-12
+								+e.title Роли в форумах
+							.col-lg-6
+								+input('Введите наименования форума','select','Наименование форума')
+							.col-lg-6
+								+e.delete
+									+input('Выбрать','select','Роль дирекции')
+									a(href="#"): +icon('close')
+							.col-lg-6
+								+input('Введите наименования форума','select','Наименование форума')
+								+e.remove(href="#") Удалить роль
+							.col-lg-6
+								+e.delete
+									+input('Выбрать','select','Роль дирекции')
+									a(href="#"): +icon('close')
 							.col-lg-12
-								+input('Введите наименования форума','text','Наименование форума')
-							.col-lg-6
-								+input('Выбрать','select','Роль дирекции')
-							.col-lg-6
+								+e.add(href="#")
+									+icon('close')
+									| Добавить
 							.col-lg-6
 								a.sAcc__login-btn.btn.btn-primary(href="#") Зарегистрироваться
 						.sAcc__policy!=`Нажимая «Зарегистрироваться», я соглашаюсь c <a href="#>обработкой персональных данных</a> на условиях <a href="#>Политики конфиденциальности.</a>`

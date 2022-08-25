@@ -29,17 +29,114 @@
 		margin-bottom: rem(8);
 		display: inline-block;
 	}
-	.form-wrap__input {
-		padding: rem(17) rem(18);
-		border-radius: 8px;
-		border: 1px solid #c8c8c8;
-		font-weight: 500;
-		font-size: rem(14);
-		line-height: calc(16 / 14);
-		&::placeholder {
-			color: #c8c8c8;
+	.form-wrap {
+		&__row {
+			// align-items: flex-end;
+		}
+		&__input {
+			padding: rem(16) rem(18);
+			border-radius: 8px;
+			border: 1px solid #c8c8c8;
+			font-weight: 500;
+			font-size: rem(14);
+			line-height: calc(16 / 14);
+			color: #C8C8C8;
+			&::placeholder {
+				color: #c8c8c8;
+			}
+		}
+		&__input-wrap {
+			width: 100%;
+		}
+		&__delete {
+			display: flex;
+			align-items: flex-end;
+			a {
+				flex: 0 0 auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 50px;
+				height: 50px;
+				background-color: #F3F3F3;
+				border-radius: 8px;
+				margin-left: rem(16);
+				.icon {
+					font-size: rem(20);
+					color: #FE6057;
+				}
+				&:hover {
+					background-color: #f2eeee;
+				}
+			}
+		}
+		&__title {
+			@include rfs(20px);
+			font-weight: 500;
+			color: $primary;
+			margin-bottom: rem(-8);
+		}
+		&__add {
+			@include rfs(20px);
+			font-weight: 500;
+			color: $primary;
+			.icon {
+				font-size: rem(20);
+				transform: rotate(-45deg);
+				margin-right: rem(16);
+			}
+			&:hover {
+				opacity: .8;
+			}
+		}
+		&__remove {
+			color: #FE6057;
+			font-size: rem(12);
+			&:hover {
+				color: #fb4c42;
+			}
 		}
 	}
+	// .form-wrap__input {
+	// 	padding: rem(16) rem(18);
+	// 	border-radius: 8px;
+	// 	border: 1px solid #c8c8c8;
+	// 	font-weight: 500;
+	// 	font-size: rem(14);
+	// 	line-height: calc(16 / 14);
+	// 	color: #C8C8C8;
+	// 	&::placeholder {
+	// 		color: #c8c8c8;
+	// 	}
+	// }
+	// .form-wrap__input-wrap {
+	// 	width: 100%;
+	// }
+	// .form-wrap__delete {
+	// 	display: flex;
+	// 	align-items: flex-end;
+	// 	a {
+	// 		flex: 0 0 auto;
+	// 		display: flex;
+	// 		align-items: center;
+	// 		justify-content: center;
+	// 		width: 50px;
+	// 		height: 50px;
+	// 		background-color: #F3F3F3;
+	// 		border-radius: 8px;
+	// 		margin-left: rem(16);
+	// 		.icon {
+	// 			font-size: rem(20);
+	// 			color: #FE6057;
+	// 		}
+	// 	}
+	// }
+	// .form-wrap__title {
+	// 	@include rfs(20px);
+	// 	font-weight: 500;
+	// 	color: $primary;
+	// 	margin-bottom: rem(24);
+	// }
 	&__forget {
 		font-size: rem(14);
 		line-height: calc(16 / 14);
