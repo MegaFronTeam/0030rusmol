@@ -57,6 +57,10 @@ body:not(.main-page) {
 	}
 	.row{
 		align-items: center;
+		--bs-gutter-x: #{rem(14)};
+		@include media-breakpoint-up(xl) {
+			--bs-gutter-x: #{rem(24)};
+		}
 	}
 	
 	.logo-link{
@@ -71,14 +75,18 @@ body:not(.main-page) {
 	&__btn--cabinet{
 		@extend .btn, .btn-primary;
 		padding: 0 !important;
-		width: rem(48);
-		height: rem(48);
+		width: rem(30);
+		height: rem(30);
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		border-radius: 50%;
 		border: none !important;
 		position: relative;
+		@include media-breakpoint-up(md) {
+			width: rem(48);
+			height: rem(48);
+		}
 		img{
 			position: absolute;
 			left: 0;
@@ -90,7 +98,10 @@ body:not(.main-page) {
 			border-radius: 50%;
 		}
 		.icon{
-			font-size: rem(16);
+			font-size: rem(14);
+			@include media-breakpoint-up(md) {
+				font-size: rem(16);
+			}
 		}
 	}
 	@include media-breakpoint-up(md) {}
