@@ -125,7 +125,7 @@ $theme-colors: (
 ) !default;
 // scss-docs-end theme-colors-map
 
-$theme-colors: map-remove($theme-colors, "dark", "success");
+// $theme-colors: map-remove($theme-colors, "dark", "success");
 
 // scss-docs-start theme-colors-rgb
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
