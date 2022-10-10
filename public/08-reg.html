@@ -41,6 +41,13 @@
 								</div>
 							</div>
 							<div class="col-auto">
+								<a class="top-nav__btn top-nav__btn--cabinet" href="#" data-src="modal-feedback" data-fancybox="modal">
+									<svg class="icon icon-help ">
+										<use xlink:href="img/svg/sprite.svg#help"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="col-auto">
 								<a class="top-nav__btn top-nav__btn--cabinet" href="#">
 									<svg class="icon icon-user ">
 										<use xlink:href="img/svg/sprite.svg#user"></use>
@@ -71,7 +78,7 @@
 							</div>
 							<div class="form-wrap">
 								<form>
-									<div class="row">
+									<div class="form-wrap__row row">
 										<div class="col-lg-6">
 											<div class="form-wrap__input-wrap form-group">
 												<label><span class="form-wrap__input-title">Фамилия</span><input class="form-wrap__input form-control" name="text" type="text" placeholder="Ваша фамилия"/>
@@ -108,18 +115,15 @@
 											</div>
 											<!-- +e.input-wrap-->
 										</div>
-										<div class="col-lg-12">
-											<div class="form-wrap__input-wrap form-group">
-												<label><span class="form-wrap__input-title">Наименование форума</span><input class="form-wrap__input form-control" name="text" type="text" placeholder="Введите наименования форума"/>
-												</label>
+										<div class="col-12">
+											<div class="form-wrap__title">Роли в форумах
 											</div>
-											<!-- +e.input-wrap-->
 										</div>
 										<div class="col-lg-6">
 											<div class="form-wrap__input-wrap form-group">
-												<label><span class="form-wrap__input-title">Роль дирекции</span>
+												<label><span class="form-wrap__input-title">Наименование форума</span>
 													<select class="form-wrap__input form-select" name="select">
-														<option value="Выбрать">Выбрать</option>
+														<option value="Введите наименования форума">Введите наименования форума</option>
 														<option value=" placeholder 1">placeholder 1</option>
 														<option value=" placeholder 2">placeholder 2</option>
 														<option value=" placeholder 3">placeholder 3</option>
@@ -129,7 +133,67 @@
 											</div>
 											<!-- +e.input-wrap-->
 										</div>
-										<div class="col-lg-6"></div>
+										<div class="col-lg-6">
+											<div class="form-wrap__delete">
+												<div class="form-wrap__input-wrap form-group">
+													<label><span class="form-wrap__input-title">Роль дирекции</span>
+														<select class="form-wrap__input form-select" name="select">
+															<option value="Выбрать">Выбрать</option>
+															<option value=" placeholder 1">placeholder 1</option>
+															<option value=" placeholder 2">placeholder 2</option>
+															<option value=" placeholder 3">placeholder 3</option>
+															<option value=" placeholder 4">placeholder 4</option>
+														</select>
+													</label>
+												</div>
+												<!-- +e.input-wrap--><a href="#">
+													<svg class="icon icon-close ">
+														<use xlink:href="img/svg/sprite.svg#close"></use>
+													</svg></a>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-wrap__input-wrap form-group">
+												<label><span class="form-wrap__input-title">Наименование форума</span>
+													<select class="form-wrap__input form-select" name="select">
+														<option value="Введите наименования форума">Введите наименования форума</option>
+														<option value=" placeholder 1">placeholder 1</option>
+														<option value=" placeholder 2">placeholder 2</option>
+														<option value=" placeholder 3">placeholder 3</option>
+														<option value=" placeholder 4">placeholder 4</option>
+													</select>
+												</label>
+											</div>
+											<!-- +e.input-wrap-->
+											<a class="form-wrap__remove" href="#">Удалить роль
+											</a>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-wrap__delete">
+												<div class="form-wrap__input-wrap form-group">
+													<label><span class="form-wrap__input-title">Роль дирекции</span>
+														<select class="form-wrap__input form-select" name="select">
+															<option value="Выбрать">Выбрать</option>
+															<option value=" placeholder 1">placeholder 1</option>
+															<option value=" placeholder 2">placeholder 2</option>
+															<option value=" placeholder 3">placeholder 3</option>
+															<option value=" placeholder 4">placeholder 4</option>
+														</select>
+													</label>
+												</div>
+												<!-- +e.input-wrap--><a href="#">
+													<svg class="icon icon-close ">
+														<use xlink:href="img/svg/sprite.svg#close"></use>
+													</svg></a>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<a class="form-wrap__add" href="#">
+												<svg class="icon icon-close ">
+													<use xlink:href="img/svg/sprite.svg#close"></use>
+												</svg>Добавить
+											</a>
+										</div>
 										<div class="col-lg-6"><a class="sAcc__login-btn btn btn-primary" href="#">Зарегистрироваться</a></div>
 									</div>
 									<div class="sAcc__policy">Нажимая «Зарегистрироваться», я соглашаюсь c <a href="#>обработкой персональных данных</a> на условиях <a href="#>Политики конфиденциальности.</a></div>
@@ -204,6 +268,39 @@
 			</div>
 		</div>
 		<!-- #modal-2-->
+		<div id="modal-feedback" style="display: none">
+			<div class="modal-win modal-win--feedback">
+				<div class="form-wrap">
+					<form>
+						<div class="h5 text-primary">Есть вопросы?</div>
+						<p>Задайте их нашим специалистам</p>
+						<div class="form-wrap__input-wrap form-group">
+							<label><span class="form-wrap__input-title">Ваше имя</span><input class="form-wrap__input form-control" name="text" type="text" placeholder="Введите имя"/>
+							</label>
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group">
+							<label><span class="form-wrap__input-title">Ваша фамилия</span><input class="form-wrap__input form-control" name="text" type="text" placeholder="Введите фамилию"/>
+							</label>
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group">
+							<label><span class="form-wrap__input-title">E-mail</span><input class="form-wrap__input form-control" name="email" type="email" placeholder="sample@sample.com"/>
+							</label>
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group">
+							<label><span class="form-wrap__input-title">Ваш вопрос</span><input class="form-wrap__input form-control" name="text" type="text" placeholder="Вопрос"/>
+							</label>
+						</div>
+						<!-- +e.input-wrap-->
+						<button class="form-wrap__btn btn btn-primary" type="submit">Задать вопрос
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- #modal-3-->
 		<!-- end modals-->
 		<script src="libs/jquery/jquery.min.js"></script>
 		<script src="libs/@fancyapps/ui/fancybox.umd.js"> </script>

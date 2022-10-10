@@ -21,7 +21,7 @@
 			font-size: 18px;
 		}
 	}
-	&--lk{
+	&--lk, &--feedback {
 		width: rem(403);
 	}
 	border-radius: 20px;
@@ -42,6 +42,48 @@
 		color: $primary;
 		font-size: 40px;
 		font-weight: 100;
+	}
+	&--feedback {
+		.form-wrap {
+			.h5 {
+				font-weight: 400;
+				margin-bottom: rem(25);
+			}
+			p {
+				font-size: rem(18);
+				margin-bottom: rem(25);
+				color: $body-color;
+			}
+			&__input-wrap {
+				margin-bottom: rem(25);
+				&:last-of-type {
+					margin-bottom: rem(108);
+				}
+			}
+			&__input-title {
+				color: $body-color;
+				font-size: rem(14);
+				margin-bottom: rem(8);
+				display: block;
+			}
+			&__input {
+				border-radius: 8px;
+				border-color: #C8C8C8;
+				font-size: rem(14);
+				padding: rem(17) rem(18);
+				&::placeholder {
+					color: #C8C8C8;
+				}
+			}
+			&__btn {
+				width: 100%;
+
+				--bs-btn-font-weight: 500;
+			}
+		}
+		& ~ .is-close {
+			display: none;
+		}
 	}
 }
 

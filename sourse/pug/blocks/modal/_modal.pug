@@ -22,5 +22,17 @@ mixin modal()
 			a.btn.btn-primary.w-100(href="#") Буду ждать!
 	// #modal-2
 
+	div(id="modal-feedback"  style="display: none" )
+		+b.modal-win--feedback
+			+form-wrap
+				.h5.text-primary Есть вопросы?
+				p Задайте их нашим специалистам
+				+input('Введите имя', 'text', 'Ваше имя')
+				+input('Введите фамилию', 'text', 'Ваша фамилия')
+				+input('sample@sample.com', 'email', 'E-mail')
+				+input('Вопрос', 'text', 'Ваш вопрос')
+				+e.BUTTON.btn.btn.btn-primary(type="submit"  ) Задать вопрос
+	// #modal-3
+
 	
 	// end modals

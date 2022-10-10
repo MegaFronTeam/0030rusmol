@@ -31,6 +31,9 @@ mixin top-nav(cab)
 								+menu-toggle()
 								+mnu()
 					.col-auto
+						+e.btn--cabinet(href="#" data-src='modal-feedback' data-fancybox="modal")
+							+icon("help")
+					.col-auto
 						+e.btn--cabinet(href="#")
 							+icon("user")
 							if cab
