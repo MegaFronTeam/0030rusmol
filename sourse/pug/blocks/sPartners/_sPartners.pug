@@ -7,7 +7,7 @@ mixin sPartners(data)
 				.swiper-wrapper
 					mixin slide(pic,title)
 						.swiper-slide
-							+e.slide
+							+e.A.slide(href="#")
 								+pic(`partner-${pic}.png`,'',0)
 								+e.title!=title
 					+slide(1,`Евростандарт`)

@@ -108,6 +108,7 @@
 	&::before{
 		content: '';
 		position: absolute;
+		pointer-events: none;
 		@include media-breakpoint-up(xl){
 			--size: 1000px
 		}
