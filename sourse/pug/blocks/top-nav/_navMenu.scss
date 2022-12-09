@@ -3,10 +3,12 @@
 
 		display: flex;
 		text-align: center;
-		@include roww(20px);
+		@include roww(12px);
 		flex-wrap: wrap;
 	}
-
+	@include media-breakpoint-up(xl) {
+		--bs-gutter-x: 20px;
+	}
 	list-style: none;
 	position: relative;
 	margin-bottom: 0;
