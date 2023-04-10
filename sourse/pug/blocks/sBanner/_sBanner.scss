@@ -104,7 +104,7 @@
 // start .sBanner
 .sBanner-page {
 	position: relative;
-	z-index: 2;
+	// z-index: 2;
 	&::before{
 		content: '';
 		position: absolute;
