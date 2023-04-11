@@ -4,6 +4,8 @@
 	// z-index: 2;
 	h2{
 		line-height: 1;
+		position: relative;
+		z-index: 3;
 	}
 	&::before{
 		content: '';
@@ -98,7 +100,7 @@
 			@include media-breakpoint-up(xl) {
 				
 				position: absolute;
-				bottom: -10px;
+				bottom: -100px;
 				left: rem(400);
 				margin-top: 0;
 				img{
