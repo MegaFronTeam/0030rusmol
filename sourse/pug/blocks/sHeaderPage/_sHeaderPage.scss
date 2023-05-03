@@ -19,13 +19,13 @@
 		}
 		padding: rem(30) rem(20);
 		border-radius: 32px;
-		&::after{
-			content: '';
-			position: absolute;
-			@include a-cent;
-			background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-			z-index: -1;
-		}
+		// &::after{
+		// 	content: '';
+		// 	position: absolute;
+		// 	@include a-cent;
+		// 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+		// 	z-index: -1;
+		// }
 	}
 	// .container{
 	// 	flex-grow: 1;
