@@ -7,25 +7,25 @@
 		position: relative;
 		z-index: 3;
 	}
+	@include media-breakpoint-up(lg){
 	&::before{
 		content: '';
 		position: absolute;
-		@include media-breakpoint-up(xl){
-			--size: 1000px
-		}
 		--size: 500px;
-		width: var(--size);
-		height: var(--size); 
-		background: #8C64D8;
-		opacity: 0.2;
-		border-radius: 50%;
-		filter: blur(40px); 
-		z-index: -1;
-		right: calc(-1 * var(--size) / 2);
-		// top: 0;
-		bottom: 0;
+			--size: 1000px
+			width: var(--size);
+			height: var(--size); 
+			background: #8C64D8;
+			opacity: 0.2;
+			border-radius: 50%;
+			filter: blur(40px); 
+			z-index: -1;
+			right: calc(-1 * var(--size) / 2);
+			// top: 0;
+			bottom: 0;
+		}
 	}
-	// --sPT: #{rem()};
+		// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
 	&__row{

@@ -105,14 +105,12 @@
 .sBanner-page {
 	position: relative;
 	// z-index: 2;
+		@include media-breakpoint-up(lg){
 	&::before{
 		content: '';
 		position: absolute;
-		pointer-events: none;
-		@include media-breakpoint-up(xl){
-			--size: 1000px
-		}
-		--size: 500px;
+		pointer-events: none; 
+			--size: 1000px 
 		width: var(--size);
 		height: var(--size); 
 		background: #8C64D8;
@@ -123,6 +121,7 @@
 		right: calc(-1 * var(--size) / 2);
 		// top: 0;
 		bottom: 0;
+	}
 	}
 	@include media-breakpoint-up(sm) {
 
