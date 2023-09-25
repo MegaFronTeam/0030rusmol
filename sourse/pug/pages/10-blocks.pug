@@ -1,0 +1,20 @@
+extends ../layout/main.pug
+
+
+include ../blocks/sBaseBanner/_sBaseBanner.pug
+include ../blocks/sCards/_sCards.pug
+include ../blocks/footer/_footer.pug
+
+block variables
+	- let  mainPage= null 
+	- let  bg= null
+
+block title
+	- let  title= 'Модальные окна'
+	title= title
+block pagecontent
+	//- +topLine()
+	
+	+sBaseBanner
+	+sCards
+	+footer2

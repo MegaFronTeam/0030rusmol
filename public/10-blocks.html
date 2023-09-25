@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Модальные окна</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox.css" rel="stylesheet"/>
+		<link href="css/main.min.css?v=0.0.1" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="main-wrapper">
+			<!-- start sBanner-->
+			<section class="sBanner section" id="sBanner">
+				<div class="container">
+					<div class="sBanner__inner">
+						<h2>Хочешь  в&nbsp;команду?</h2>
+						<p>Жми на&nbsp;кнопку и&nbsp;узнай подробности</p>
+						<a class="sBanner__link" href="#">Вакансии
+						</a>
+						<!-- picture-->
+						<picture> 
+							<source type="image/webp" srcset="img/@2x/webp/banner-img3.webp" media="(min-width:576px)"/>
+							<source type="image/webp" srcset="img/@1x/webp/banner-img3.webp"/>
+							<source type="image/png" srcset="img/@2x/banner-img3.png" media="(min-width:576px)"/>
+							<source type="image/png" srcset="img/@1x/banner-img3.png"/>
+							<source type="image/webp" srcset="img/@2x/webp/banner-img3.webp"/><img src="img/@2x/banner-img3.png" alt="" loading="lazy"/>
+						</picture>
+						<!-- /picture-->
+					</div>
+				</div>
+			</section>
+			<!-- end sBanner-->
+			<!-- start sCards-->
+			<div class="sCards section" id="sCards">
+				<div class="container">
+					<div class="sCards__row row">
+						<div class="sCards__col col-xl-4 col-md-6">
+							<div class="card">
+								<h4>Наставничество</h4>
+								<p>Получай обратную связь и поддержку от экспертов разных отраслей</p>
+								<h4>Развитие</h4>
+								<p>Получи уникальные знания, доступные только на форуме от выдающихся личностей страны</p>
+							</div>
+						</div>
+						<div class="sCards__col col-xl-4 col-md-6">
+							<div class="card">
+								<h4>Сообщество</h4>
+								<p>Найди новых друзей и единомышленников со всей России</p>
+								<h4>Карьера</h4>
+								<p>Пройди стажировку в ведущих российских компаниях, найди работу мечты и новые карьерные возможности</p>
+							</div>
+						</div>
+						<div class="sCards__col col-xl-4 col-md-6">
+							<div class="card">
+								<h4>Гранты</h4>
+								<p>Получи финансовую поддержку на реализацию своих проектов</p>
+								<h4>Путешествия</h4>
+								<p>Вдохновляйся многообразием мест и культур самой большой страны мира, путешествуй по России с пользой и вноси позитивные изменения</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end sCards-->
+			<footer class="footer footer--update">
+				<div class="container">
+					<div class="footer__panel panel">
+						<div class="footer__head row gy-3">
+							<div class="col-sm">
+								<div class="logo-link"><a href="https://fadm.gov.ru/" target="_blank"><img src="img/svg/logo.svg" alt=""/></a>
+								</div>
+							</div>
+							<div class="col-auto">
+								<div class="soc">
+									<a class="soc__item" href="https://t.me/rosmolodez" target="_blank">
+										<svg class="icon icon-telegram ">
+											<use xlink:href="img/svg/sprite.svg#telegram"></use>
+										</svg>
+									</a>
+									<a class="soc__item" href="https://vk.com/public204648084" target="_blank">
+										<svg class="icon icon-vk ">
+											<use xlink:href="img/svg/sprite.svg#vk"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer__footer row gy-3">
+							<div class="col">
+								<p>Федеральное государственное бюджетное учреждение «Дирекция по организации и проведению молодежных форумов»</p>
+								<p>Г. Москва, Большой Козловский пер., д.6, к.6</p>
+								<p><a href="mailto:events.myrosmol.ru"> events.myrosmol.ru</a></p>
+								<p><a href="mailto:forum@fadm.gov.ru"> forum@fadm.gov.ru</a></p>
+								<p><a href="tel:8(495)668-82-52"> 8 (495) 668-82-52</a></p>
+								<p>ОГРН 1027739123818</p>
+							</div>
+							<div class="col-xl-3 col-lg-auto order-lg-first">© 2020. Все права защищены</div>
+						</div><img class="res-i mt-3" src="img/svg/rus-lg.svg" loading="lazy" alt=""/>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!--  start modals-->
+		<div id="modal-1" style="display: none">
+			<div class="modal-win modal-win--sm">
+				<div class="h3 text-primary">Хотите учавствовать в&nbsp;мероприятии?</div>
+				<p>Пройдите курс в личном кабинете</p><a class="btn btn-primary w-100" href="#">Перейти в личный кабинет</a>
+			</div>
+		</div>
+		<!-- #modal-1-->
+		<div id="modal-2" style="display: none">
+			<div class="modal-win modal-win--sm">
+				<div class="h3 text-primary">Зарегистрироваться на&nbsp;мероприятие?</div>
+				<p>Вы&nbsp;будете перенаправлены на&nbsp;сайт АИС Молодежь России для дальнейшей регистрации</p><a class="btn btn-primary w-100" href="#">Продолжить регистрацию</a>
+			</div>
+		</div>
+		<!-- #modal-2-->
+		<div id="modal-lk" style="display: none">
+			<div class="modal-win modal-win--lk">
+				<div class="h3 text-primary">Ваша заявка принята на рассмотрение</div>
+				<p>По&nbsp;готовности вам придет сообщение на&nbsp;адрес электронной почты, который вы&nbsp;указали при регистрации</p><a class="btn btn-primary w-100" href="#">Буду ждать!</a>
+			</div>
+		</div>
+		<!-- #modal-2-->
+		<div id="modal-feedback" style="display: none">
+			<div class="modal-win modal-win--feedback">
+				<div class="form-wrap">
+					<form>
+						<div class="h5 text-primary">Есть вопросы?</div>
+						<p>Задайте их нашим специалистам</p>
+						<div class="form-wrap__input-wrap form-group">
+							<label><span class="form-wrap__input-title">Ваше имя</span><input class="form-wrap__input form-control" name="text" type="text" placeholder="Введите имя"/>
+							</label>
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group">
+							<label><span class="form-wrap__input-title">Ваша фамилия</span><input class="form-wrap__input form-control" name="text" type="text" placeholder="Введите фамилию"/>
+							</label>
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group">
+							<label><span class="form-wrap__input-title">E-mail</span><input class="form-wrap__input form-control" name="email" type="email" placeholder="sample@sample.com"/>
+							</label>
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group">
+							<label><span class="form-wrap__input-title">Ваш вопрос</span><input class="form-wrap__input form-control" name="text" type="text" placeholder="Вопрос"/>
+							</label>
+						</div>
+						<!-- +e.input-wrap-->
+						<button class="form-wrap__btn btn btn-primary" type="submit">Задать вопрос
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- #modal-3-->
+		<!-- end modals-->
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="js/common.js?v=0.0.1"></script>
+	</body>
+</html>

@@ -21,6 +21,23 @@
 		}
 	}
 	font-size: 14px;
+	&--update{
+		color: #fff;
+		a{
+			color: #fff !important;
+		}
+	}
+	
+	p{
+		max-width: rem(590);
+		font-weight: 400;
+	}
+	// &__alert{
+	// 	.row{
+	// 		align-items: center;
+	// 		border-radius: 10;
+	// 	}
+	// }
 // 
 @include media-breakpoint-up(xl) {}
 

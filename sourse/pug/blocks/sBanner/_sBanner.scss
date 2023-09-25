@@ -3,6 +3,17 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
+	&__link{
+		@include rfs(60px);
+		font-weight: 500;
+		border-bottom: .1em solid;
+		color: $warning !important;
+		line-height: 1.2;
+		&:hover{
+			border-color: transparent;
+		}
+
+	}
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};

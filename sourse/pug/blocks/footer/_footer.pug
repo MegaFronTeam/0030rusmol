@@ -11,3 +11,33 @@ mixin footer()
 					.col-auto: a(href="#")  Политика конфиденциальности
 					.col-auto: a(href="#")  Пользовательское соглашение
 					.col-xl-3.col-lg-auto.order-lg-first © 2020. Все права защищены
+mixin footer2()
+	+b.FOOTER.footer--update
+		.container
+			+e.panel.panel
+				+e.head.row.gy-3
+					.col-sm
+						+logo
+					.col-auto
+						+soc
+				+e.footer.row.gy-3
+					.col
+						p Федеральное государственное бюджетное учреждение «Дирекция по организации и проведению молодежных форумов»
+
+						p Г. Москва, Большой Козловский пер., д.6, к.6
+
+						p: a(href="mailto:events.myrosmol.ru")  events.myrosmol.ru
+
+						p: a(href="mailto:forum@fadm.gov.ru")  forum@fadm.gov.ru
+
+						p: a(href="tel:8(495)668-82-52")  8 (495) 668-82-52
+
+						p ОГРН 1027739123818
+					.col-xl-3.col-lg-auto.order-lg-first © 2020. Все права защищены
+				img(src="img/svg/rus-lg.svg", loading="lazy" alt="").res-i.mt-3
+				//- +e.alert
+				//- 	.col МЕЖДУНАРОДНАЯ ВЫСТАВКА-ФОРУМ
+				//- 	.col-auto 
+				//- 	.col
+				//- 		span МОСКВА. ВДНХ
+				//- 		| 04.11.2023—12.04.2024
